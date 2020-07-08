@@ -1,0 +1,76 @@
+.title2 {
+    color: white;
+    font-family: Prata;
+    font-size: 96px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.sub-title2 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 48px;
+    margin-left: 100px;
+}
+
+.text-body {
+    color: white;
+    font-family: Montserrat;
+    font-size: 29px;    
+}
+
+.contact {
+    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
+    border: 0px;
+}
+
+.contact:hover {
+    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
+    
+}
+
+.title3 {
+    color: white;
+    font-family: Prata;
+    font-size: 72px;
+    margin-left: 100px;
+}
+
+.text-block {
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    width: 300px;
+}
+
+.sub-title {
+    font-family: Prata;
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+.banner {
+    height: 100vh;
+}
+
+.title{
+    font-family: Prata;
+    font-size: 36px;
+    color: white;
+    width: 600px;
+    margin: 0;
+}
+
+.back {
+    height: 100vh;
+    background-color: #304448 ;
+}
+
+.line {
+    height: 5px;
+    width: 200px;
+    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
+    border: 0;
+    margin: 10px 0px 10px 0px;
+}
