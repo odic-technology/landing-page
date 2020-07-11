@@ -1,31 +1,33 @@
 import OdicHeader from '../../components/OdicHeader'
 
-import React from 'react';
+import React from 'react'
 import Banner from '../../assets/banner.png'
 import 'antd/dist/antd.css'
-import { Carousel, Row, Col, Layout, Menu, Tabs } from 'antd';
-const { Header, Footer, Sider, Content } = Layout;
+import { Row, Col } from 'antd'
+import './style.css'
+import odicLogo from '../../assets/odicNameLogo.svg'
 
-function App() {
+function App () {
   return (
     <>
       <OdicHeader />
-      <Row className="back">
-        <Col span={12}>
-          <img src={Banner} className="banner" />
+      <Row>
+        <Col span={11} className='divHomeBanner'>
+          <img src={Banner} className='homeBanner' />
         </Col>
-        <Col span={12} className="right-col">
-          <Row align="middle" className="back">
+        <Col span={13}>
+          <img className='odicLogo' src={odicLogo} />
+          <Row align='middle' className='homeDiv'>
             <Col>
-              <h1 className="title">Somos a empresa digital preparada para te acompanhar à 4ª Revolução Industrial.</h1>
-              <hr className="line" />
-              <p className="sub-title">Criamos soluções inovadoras para apps, sites e designs.</p>       
+              <h1 className='homeTitle'>Somos a empresa digital preparada para te acompanhar à 4ª Revolução Industrial.</h1>
+              <hr className='homeLine' />
+              <p className='homeSubTitle'>Criamos soluções inovadoras para apps, sites e designs.</p>
             </Col>
           </Row>
         </Col>
       </Row>
     </>
-  );
+  )
 }
 
 export default App

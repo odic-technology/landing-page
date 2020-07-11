@@ -1,0 +1,50 @@
+.divHomeBanner {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.homeBanner {
+    height: 140vh;
+    margin-top: -16vh;
+    margin-left: -5vw;
+}
+
+.homeDiv {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin-top: 10vh;
+}
+
+.homeTitle{
+    font-family: Prata;
+    font-size: 2.4vw;
+    color: white;
+    margin: 0;
+}
+
+.homeLine {
+    height: 4px;
+    width: 10vw;
+    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
+    border: 0;
+    margin: 10px 0px 10px 0px;
+}
+
+.homeSubTitle {
+    font-family: Prata;
+    font-size: 1.4vw;
+    color: white;
+    margin: 0;
+}
+
+.odicLogo {
+    margin-top: 25px;
+    margin-left: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+}
