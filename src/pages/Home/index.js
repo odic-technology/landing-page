@@ -9,12 +9,12 @@ const { Header, Footer, Sider, Content } = Layout;
 function App() {
   return (
     <>
+      <OdicHeader />
       <Row className="back">
         <Col span={12}>
           <img src={Banner} className="banner" />
         </Col>
         <Col span={12} className="right-col">
-          <OdicHeader />
           <Row align="middle" className="back">
             <Col>
               <h1 className="title">Somos a empresa digital preparada para te acompanhar à 4ª Revolução Industrial.</h1>

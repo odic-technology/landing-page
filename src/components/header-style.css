@@ -1,3 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    margin-top: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+#menuHorizontal {
+    transition: opacity 0.5s, margin-right 0.5s, visibility 0.5s;
+    transition-timing-function: ease-out;
+    margin-right: -130px;
+    opacity: 0;
+    z-index: 8;
+    visibility: hidden;
+}
+
+.open {
+    margin-right: 0px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.ant-menu-submenu-title {
+    display: none !important;
+}
+
 .ant-layout-header {
     background: red;
     background-color: red;
@@ -5,10 +35,57 @@
 
 .basic {
     color: white;
-    font-size: 18;
+    font-size: 16px;
     font-family: Montserrat;
 }
 
 .basic:hover {
     border: red;
+}
+
+.contact {
+    border-radius: 6px !important;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact text {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.menuButton {
+    border: none !important;
+    height: 40px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    cursor: pointer;
+    background-color: #304448;
+    border: 0 !important;
+}
+
+.menuButton:active {
+    transform: scale(0.95);
+    opacity: 0.85;
+}
+
+.menuText {
+    color: white;
+    font-size: 12px;
+    font-family: Montserrat;
+    margin-left: 10px;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
+    border-bottom: 2px solid #FFFFFF !important;
 }
