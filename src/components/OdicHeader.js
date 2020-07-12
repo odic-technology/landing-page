@@ -35,7 +35,7 @@ export default function Navbar () {
             <Link to='/services'><p className='basic'>Serviços</p></Link>
           </Menu.Item>
           <Link to='/contact'>
-            <button className='contact'>
+            <button className='menuButtonContact'>
               <text>Contato</text>
             </button>
           </Link>

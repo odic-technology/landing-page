@@ -1,75 +1,88 @@
-.title2 {
-    color: white;
-    font-family: Prata;
-    font-size: 96px;
-    margin-left: 100px;
-    margin-top: 100px;
-}
-
-.sub-title2 {
-    color: white;
-    font-family: Montserrat;
-    font-size: 48px;
-    margin-left: 100px;
-}
-
-.text-body {
-    color: white;
-    font-family: Montserrat;
-    font-size: 29px;    
-}
-
-.contact {
-    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
-    border: 0px;
-}
-
-.contact:hover {
-    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
-    
-}
-
-.title3 {
-    color: white;
-    font-family: Prata;
-    font-size: 72px;
-    margin-left: 100px;
-}
-
-.text-block {
-    color: white;
-    font-family: Montserrat;
-    font-size: 18px;
-    width: 300px;
-}
-
-.sub-title {
-    font-family: Prata;
-    font-size: 24px;
-    color: white;
-    margin: 0;
-}
-
-.banner {
+.about {
     height: 100vh;
 }
 
-.title{
-    font-family: Prata;
-    font-size: 36px;
-    color: white;
-    width: 600px;
-    margin: 0;
-}
-
-.back {
+.leftCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     height: 100vh;
+    padding-left: 8vw;
 }
 
-.line {
-    height: 5px;
-    width: 200px;
+.leftCol text {
+    font-family: Prata;
+    color: white;
+    font-size: 4vw;
+    margin-bottom: 12vh;
+}
+
+.leftCol button {
+    font-family: Montserrat;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-size: 1.8vw;
+    outline: none;
+}
+
+.leftCol button:active {
+    opacity: 0.4;
+    transform: scale(0.95);
+}
+
+.leftCol div {
+    height: 2px;
+}
+
+.leftCol .buttonBorder {
+    height: 2px;
     background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
     border: 0;
-    margin: 10px 0px 10px 0px;
+}
+
+.rightCol {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rightCol text {
+    font-family: Montserrat;
+    text-align: justify;
+    font-size: 1.2vw;
+    color: white;
+}
+
+.rightCol text:not(:first-child) {
+    padding-top: 5vh;
+}
+
+.rightCol .aboutFirstText {
+    text-indent: 1.5vw;
+    padding-top: 0px !important;
+}
+.rightCol div {
+    transition: visibility 0.3s, opacity 0.3s;
+    transition-delay: 0.2s;
+    opacity: 1;
+    width: 100%;
+    padding-right: 8vw;
+    position: absolute;
+    padding-top: 8vh;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightCol .hide {
+    visibility: hidden;
+    transition-delay: 0.0s !important;
+    opacity: 0;
 }

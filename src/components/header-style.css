@@ -43,24 +43,6 @@
     border: red;
 }
 
-.contact {
-    border-radius: 6px !important;
-    width: 100px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.contact text {
-    color: white;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 13px;
-}
-
 .menuButton {
     border: none !important;
     height: 40px;
@@ -88,4 +70,29 @@
 
 .ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
     border-bottom: 2px solid #FFFFFF !important;
+}
+
+.menuButtonContact {
+    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
+    border: 0px;
+    border-radius: 6px !important;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menuButtonContact:hover {
+    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
+    
+}
+
+.menuButtonContact text {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 13px;
 }
