@@ -1,0 +1,99 @@
+.portifolio {
+    height: 100vh;
+}
+
+.portifolio .title {
+    font-size: 5vw;
+    font-family: Prata;
+    color: white;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.portifolio .subTitle {
+    width: 100vw;
+    text-align: center;
+    color: #00FF57;
+    font-size: 1.6vw;
+    margin-top: 6vh;
+}
+
+.portifolio .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+.portifolio .cards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background: white;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.portifolio .cards .cardRow {
+    width: 45vh;
+    background-color: transparent;
+}
+
+.portifolio .cards .cardMobile {
+    width: 25vh;
+    border-radius: 20px;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.portifolio .cards .cardWeb {
+    width: 42vh;
+    border-radius: 20px;
+    padding-top: 5vh;
+}
+
+.portifolio .cardDesign {
+    width: 40vh;
+    margin-left: 7vw;
+    padding-top: 2.7vh;
+}
+
+.portifolio .cards .cardMobile:hover {
+    background-color: #00C564;
+}
+
+.portifolio .cards .cardWeb:hover {
+    background-color: #0B94A7;
+}
+
+.portifolio .cardDesign:hover {
+    background-color: #E4021D;
+}
+
+.portifolio .cards text {
+    font-family: Montserrat;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 4vh;
+    font-size: 3vh;
+    text-align: center;
+}
+
+.portifolio .cards .cardWeb text {
+    margin-bottom: 3.8vh;
+}
+
+.portifolio .cards img {
+    width: 2vw;
+}
+
+.portifolio .cards .cardWeb img {
+    width: 3.8vw;
+}
+
+.portifolio .cards .cardDesign img {
+    width: 2.6vw;
+}

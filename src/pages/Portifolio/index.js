@@ -1,56 +1,47 @@
-import React, { useState } from 'react'
-import OdicHeader from "../../components/OdicHeader";
-import { Carousel, Row, Col, Layout, Menu, Tabs } from 'antd';
+import React from 'react'
+import OdicHeader from '../../components/OdicHeader'
+import { Row, Col, Layout } from 'antd'
 
-import Mobile from '../../assets/card-mobile.png'
-import Web from '../../assets/card-web.png'
-import Design from '../../assets/card-design.png'
-import { Link } from 'react-router-dom';
+import Mobile from '../../assets/mobileIcon.svg'
+import Web from '../../assets/webIcon.svg'
+import Design from '../../assets/designIcon.svg'
+import { Link } from 'react-router-dom'
 
+import './portifolioStyle.css'
 
-const { TabPane } = Tabs;
-const { Header, Footer, Sider, Content } = Layout;
-export default function Portfolio() {
-
-
-
-    return (
-        <Layout className="layout">
-            <Content>
-                <Row className='back'>
-                    <Col span={24}>
-                        <Row>
-                            <Col span={24}>
-                                <OdicHeader />
-                            </Col>
-                        </Row>
-                        <Row>
-                            <div className="left-col">
-                                <h1 className="title2">Portifólio</h1>
-                            </div>
-                        </Row>
-                        <Row justify='space-around'>
-                            <Col>
-                                <Link to='/mobile'>
-                                    <img src={Mobile} />
-                                </Link>
-                            </Col >
-                            <Col>
-                            <Link to='/web'>
-                                <img src={Web} />
-                            </Link>
-                            </Col>
-                            <Col>
-                            <Link to='/design'>
-                                <img src={Design} />
-                            </Link>
-
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
-            </Content>
-        </Layout >
-    )
+const { Content } = Layout
+export default function Portfolio () {
+  return (
+    <div className='portifolio'>
+      <OdicHeader />
+      <Row>
+        <text className='title'>Portifólio</text>
+      </Row>
+      <Row>
+        <Row>
+          <text className='subTitle'>Navegue pelas categorias:</text>
+        </Row>
+        <Row className='cards'>
+          <Col className='cardRow'>
+            <div className='cardMobile'>
+              <text>Aplicativos Mobile</text>
+              <img src={Mobile} />
+            </div>
+          </Col>
+          <Col className='cardRow'>
+            <div className='cardWeb'>
+              <text>Páginas Web</text>
+              <img src={Web} />
+            </div>
+          </Col>
+          <Col className='cardRow'>
+            <div className='cardDesign'>
+              <text>Design de Interfaces</text>
+              <img src={Design} />
+            </div>
+          </Col>
+        </Row>
+      </Row>
+    </div>
+  )
 }
-
