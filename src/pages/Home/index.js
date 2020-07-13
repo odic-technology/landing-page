@@ -1,4 +1,4 @@
-import OdicHeader from '../../components/OdicHeader'
+import OdicHeader from '../../components/Header/OdicHeader'
 
 import React from 'react'
 import Banner from '../../assets/banner.png'

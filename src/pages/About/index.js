@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import OdicHeader from '../../components/OdicHeader'
+import OdicHeader from '../../components/Header/OdicHeader'
 import { Row, Col } from 'antd'
 import './about-style.css'
 

@@ -1,16 +1,22 @@
-import React from 'react'
-import OdicHeader from '../../components/OdicHeader'
-import { Row, Col, Layout } from 'antd'
-
-import Mobile from '../../assets/mobileIcon.svg'
-import Web from '../../assets/webIcon.svg'
-import Design from '../../assets/designIcon.svg'
+import React, { useState } from 'react'
+import { Row, Col } from 'antd'
 import { Link } from 'react-router-dom'
+
+import OdicHeader from '../../components/Header/OdicHeader'
+import Mobile from '../../assets/mobileIcon.svg'
+import MobileWhite from '../../assets/mobileIconWhite.svg'
+import Web from '../../assets/webIcon.svg'
+import WebWhite from '../../assets/webIconWhite.svg'
+import Design from '../../assets/designIcon.svg'
+import DesignWhite from '../../assets/designIconWhite.svg'
 
 import './portifolioStyle.css'
 
-const { Content } = Layout
 export default function Portfolio () {
+  const [hoverMobile, setHoverMobile] = useState(false)
+  const [hoverWeb, setHoverWeb] = useState(false)
+  const [hoverDesign, setHoverDesign] = useState(false)
+
   return (
     <div className='portifolio'>
       <OdicHeader />
@@ -23,22 +29,28 @@ export default function Portfolio () {
         </Row>
         <Row className='cards'>
           <Col className='cardRow'>
-            <div className='cardMobile'>
-              <text>Aplicativos Mobile</text>
-              <img src={Mobile} />
-            </div>
+            <Link to='/mobile'>
+              <div className='cardMobile' onMouseEnter={() => setHoverMobile(true)} onMouseLeave={() => setHoverMobile(false)}>
+                <text className={hoverMobile ? 'textHover' : ''}>Aplicativos Mobile</text>
+                {hoverMobile ? <img src={MobileWhite} /> : <img src={Mobile} />}
+              </div>
+            </Link>
           </Col>
           <Col className='cardRow'>
-            <div className='cardWeb'>
-              <text>Páginas Web</text>
-              <img src={Web} />
-            </div>
+            <Link to='/web'>
+              <div className='cardWeb' onMouseEnter={() => setHoverWeb(true)} onMouseLeave={() => setHoverWeb(false)}>
+                <text className={hoverWeb ? 'textHover' : ''}>Páginas Web</text>
+                {hoverWeb ? <img src={WebWhite} /> : <img src={Web} />}
+              </div>
+            </Link>
           </Col>
           <Col className='cardRow'>
-            <div className='cardDesign'>
-              <text>Design de Interfaces</text>
-              <img src={Design} />
-            </div>
+            <Link to='/design'>
+              <div className='cardDesign' onMouseEnter={() => setHoverDesign(true)} onMouseLeave={() => setHoverDesign(false)}>
+                <text className={hoverDesign ? 'textHover' : ''}>Design de Interfaces</text>
+                {hoverDesign ? <img src={DesignWhite} /> : <img src={Design} />}
+              </div>
+            </Link>
           </Col>
         </Row>
       </Row>

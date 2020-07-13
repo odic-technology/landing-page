@@ -1,0 +1,35 @@
+.portifolioWeb {
+  height: 100vh;
+}
+
+.portifolioWeb .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 86vh;
+}
+
+.portifolioWeb .content .contentBackground {
+  width: 25vw;
+  background: linear-gradient(to right, #4B54CE, #00ECD0);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.portifolioWeb .content .contentBackground div {
+  background-color: #304448;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.portifolioWeb .content text{
+  font-size: 1.3vw;
+  font-family: Montserrat;
+  color: white;
+  text-align: justify;
+}
+
+.portifolioWeb .content img{
+  width: 35vw;
+}

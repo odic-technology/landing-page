@@ -1,0 +1,12 @@
+.portifolioMobile .divCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.portifolioMobile .divCard img {
+  width: 85vw;
+  margin-bottom: 5vh;
+}

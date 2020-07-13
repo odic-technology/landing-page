@@ -35,6 +35,12 @@
     background: white;
     border-radius: 50%;
     transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.portifolio .cards div:active {
+    transform: scale(0.99);
+    opacity: 0.9;
 }
 
 .portifolio .cards .cardRow {
@@ -47,18 +53,21 @@
     border-radius: 20px;
     padding-right: 1vw;
     padding-left: 1vw;
+    box-shadow: 0px 5px 5px #000000b0;
 }
 
 .portifolio .cards .cardWeb {
     width: 42vh;
     border-radius: 20px;
     padding-top: 5vh;
+    box-shadow: 0px 5px 5px #000000b0;
 }
 
 .portifolio .cardDesign {
     width: 40vh;
-    margin-left: 7vw;
+    margin-left: 6vw;
     padding-top: 2.7vh;
+    box-shadow: 0px 5px 5px #000000b0;
 }
 
 .portifolio .cards .cardMobile:hover {
@@ -80,6 +89,10 @@
     margin-bottom: 4vh;
     font-size: 3vh;
     text-align: center;
+}
+
+.portifolio .cards .textHover {
+    color: white;
 }
 
 .portifolio .cards .cardWeb text {

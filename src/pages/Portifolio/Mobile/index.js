@@ -1,49 +1,21 @@
-import React, { useState } from 'react'
-import OdicHeader from "../../../components/OdicHeader";
-import { Carousel, Row, Col, Layout, Tabs } from 'antd';
-import { Link } from 'react-router-dom';
+import React from 'react'
 
-
-import ArrowBack from '../../../assets/back-arrow.svg'
+import OdicHeader from '../../../components/Header/OdicHeader'
+import PortifolioHeader from '../../../components/PortifolioHeader/PortifolioHeader'
 import Matchfy from '../../../assets/banner-matchfy.png'
 import Museu from '../../../assets/banner-museu.png'
 
-const { TabPane } = Tabs;
-const { Header, Footer, Sider, Content } = Layout;
+import './mobileStyle.css'
 
-export default function Mobile() {
-    return (
-        <Layout className="layout">
-            <Content>
-                <Row className='back'>
-                    <Col span={24}>
-                        <Row>
-                            <Col span={24}>
-                                <OdicHeader />
-                            </Col>
-                        </Row>
-                        <Row>
-                            <div className="left-col">
-                                <img src={ArrowBack} alt="back arrow" />
-                                <h1 className="title3">Aplicativos Mobile</h1>
-                            </div>
-                        </Row>
-                        <Row justify='center'>
-                            <Col>
-                                <img src={Matchfy} alt="card" />
-                            </Col>
-                            
-                        </Row>
-                        <Row justify='center'>
-                            <Col>
-                                <img src={Museu} alt="card" />
-                            </Col>
-                            
-                        </Row>
-                    </Col>
-                </Row>
-            </Content>
-        </Layout >
-    )
+export default function Mobile () {
+  return (
+    <div className='portifolioMobile'>
+      <OdicHeader />
+      <PortifolioHeader title='Aplicativos Mobile' />
+      <div className='divCard'>
+        <img src={Matchfy} alt='card' className='matchfy' />
+        <img src={Museu} alt='card' />
+      </div>
+    </div>
+  )
 }
-

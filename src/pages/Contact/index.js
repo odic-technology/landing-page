@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import OdicHeader from '../../components/OdicHeader';
+import OdicHeader from '../../components/Header/OdicHeader'
 import { Carousel, Row, Col, Layout, Menu, Tabs } from 'antd'
 
 import Mobile from '../../assets/mobileIcon.svg'
 import Web from '../../assets/webIcon.svg'
 import Design from '../../assets/designIcon.svg'
 import { Link } from 'react-router-dom'
-
 
 const { TabPane } = Tabs
 const { Header, Footer, Sider, Content } = Layout

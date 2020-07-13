@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Menu } from 'antd'
 import './header-style.css'
 
-import MenuIcon from '../assets/menuIcon.svg'
+import MenuIcon from '../../assets/menuIcon.svg'
 import { Link } from 'react-router-dom'
 
 const centerStyle = {

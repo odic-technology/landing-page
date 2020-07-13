@@ -1,0 +1,18 @@
+.portifolioHeader {
+  display: flex;
+  align-items: center;
+  padding: 2vh 0px 0px 2vw;
+}
+
+.portifolioHeader text {
+  font-family: Prata;
+  color: white;
+  font-size: 3.5vw;
+  margin-left: 1vw;
+}
+
+.portifolioHeader img {
+  width: 6vw;
+  cursor: pointer;
+  padding: 1vw;
+}
