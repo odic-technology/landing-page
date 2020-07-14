@@ -19,17 +19,18 @@
 .portifolioWeb .content .contentBackground div {
   background-color: #304448;
   border-radius: 5px;
-  padding: 10px;
+  padding: 2vh;
 }
 
 
-.portifolioWeb .content text{
+.portifolioWeb .content text {
   font-size: 1.3vw;
   font-family: Montserrat;
   color: white;
   text-align: justify;
+  display: block;
 }
 
-.portifolioWeb .content img{
+.portifolioWeb .content img {
   width: 35vw;
 }

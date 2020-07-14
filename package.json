@@ -12,6 +12,7 @@
     "antd": "^4.4.1",
     "bootstrap": "^4.5.0",
     "emotion-theming": "^10.0.27",
+    "now": "^19.1.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.1.1",
     "react-dom": "^16.13.1",

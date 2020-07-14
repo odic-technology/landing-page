@@ -2,8 +2,8 @@ import React from 'react'
 
 import OdicHeader from '../../../components/Header/OdicHeader'
 import PortifolioHeader from '../../../components/PortifolioHeader/PortifolioHeader'
-import Matchfy from '../../../assets/banner-matchfy.png'
-import Museu from '../../../assets/banner-museu.png'
+import Matchfy from '../../../assets/bannerMatchfy.png'
+import Museu from '../../../assets/bannerMuseu.png'
 
 import './mobileStyle.css'
 
@@ -13,7 +13,7 @@ export default function Mobile () {
       <OdicHeader />
       <PortifolioHeader title='Aplicativos Mobile' />
       <div className='divCard'>
-        <img src={Matchfy} alt='card' className='matchfy' />
+        <img src={Matchfy} alt='card' />
         <img src={Museu} alt='card' />
       </div>
     </div>
