@@ -46,7 +46,7 @@ export default function About () {
             <div className='divButton'>
               <button>
               Entrar em contato
-                <img src={RightArrow} />
+                <img src={RightArrow} alt='arrow' />
               </button>
             </div>
           </Link>

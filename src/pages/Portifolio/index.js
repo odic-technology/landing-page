@@ -32,7 +32,7 @@ export default function Portfolio () {
             <Link to='/mobile'>
               <div className='cardMobile' onMouseEnter={() => setHoverMobile(true)} onMouseLeave={() => setHoverMobile(false)}>
                 <text className={hoverMobile ? 'textHover' : ''}>Aplicativos Mobile</text>
-                {hoverMobile ? <img src={MobileWhite} /> : <img src={Mobile} />}
+                {hoverMobile ? <img src={MobileWhite} alt='mobile' /> : <img src={Mobile} alt='mobile' />}
               </div>
             </Link>
           </Col>
@@ -40,7 +40,7 @@ export default function Portfolio () {
             <Link to='/web'>
               <div className='cardWeb' onMouseEnter={() => setHoverWeb(true)} onMouseLeave={() => setHoverWeb(false)}>
                 <text className={hoverWeb ? 'textHover' : ''}>Páginas Web</text>
-                {hoverWeb ? <img src={WebWhite} /> : <img src={Web} />}
+                {hoverWeb ? <img src={WebWhite} alt='web' /> : <img src={Web} alt='web' />}
               </div>
             </Link>
           </Col>
@@ -48,7 +48,7 @@ export default function Portfolio () {
             <Link to='/design'>
               <div className='cardDesign' onMouseEnter={() => setHoverDesign(true)} onMouseLeave={() => setHoverDesign(false)}>
                 <text className={hoverDesign ? 'textHover' : ''}>Design de Interfaces</text>
-                {hoverDesign ? <img src={DesignWhite} /> : <img src={Design} />}
+                {hoverDesign ? <img src={DesignWhite} alt='design' /> : <img src={Design} alt='design' />}
               </div>
             </Link>
           </Col>

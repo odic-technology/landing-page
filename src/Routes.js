@@ -10,7 +10,6 @@ import Mobile from './pages/Portifolio/Mobile'
 import Web from './pages/Portifolio/Web'
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'

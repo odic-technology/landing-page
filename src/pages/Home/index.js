@@ -13,10 +13,10 @@ function App () {
       <OdicHeader />
       <Row>
         <Col span={11} className='divHomeBanner'>
-          <img src={Banner} className='homeBanner' />
+          <img src={Banner} className='homeBanner' alt='banner' />
         </Col>
         <Col span={13}>
-          <img className='odicLogo' src={odicLogo} />
+          <img className='odicLogo' src={odicLogo} alt='logo' />
           <Row align='middle' className='homeDiv'>
             <Col>
               <h1 className='homeTitle'>Somos a empresa digital preparada para te acompanhar à 4ª Revolução Industrial.</h1>

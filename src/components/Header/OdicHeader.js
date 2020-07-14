@@ -42,7 +42,7 @@ export default function Navbar () {
         </Menu>
       </div>
       <div onClick={() => setIsOpen(!isOpen)} className='menuButton basic'>
-        <img src={MenuIcon} />
+        <img src={MenuIcon} alt='icon' />
         <text className='menuText'>Menu</text>
       </div>
     </div>

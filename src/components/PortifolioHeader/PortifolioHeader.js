@@ -8,7 +8,7 @@ export default function PortifolioHeader ({ title }) {
   return (
     <div className='portifolioHeader'>
       <Link to='/portfolio'>
-        <img src={ArrowBack} />
+        <img src={ArrowBack} alt='arrow' />
       </Link>
       <text>{title}</text>
     </div>

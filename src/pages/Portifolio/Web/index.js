@@ -18,7 +18,7 @@ export default function Web () {
           </div>
         </div>
         <a target='_blank' rel='noopener noreferrer' href='https://matchfyapp.com'>
-          <img src={Matchfy} alt='card' />
+          <img src={Matchfy} alt='matchfy' />
         </a>
       </div>
     </div>
