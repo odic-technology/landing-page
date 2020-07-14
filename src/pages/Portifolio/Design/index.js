@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import OdicHeader from '../../../components/Header/OdicHeader'
 import PortifolioHeader from '../../../components/PortifolioHeader/PortifolioHeader'

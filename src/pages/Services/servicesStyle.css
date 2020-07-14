@@ -1,8 +1,8 @@
-.about {
+.services {
     height: 100vh;
 }
 
-.about .leftCol {
+.services .leftCol {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,14 +11,14 @@
     padding-left: 8vw;
 }
 
-.about .leftCol text {
+.services .leftCol text {
     font-family: Prata;
     color: white;
     font-size: 5vw;
     margin-bottom: 12vh;
 }
 
-.about .leftCol button {
+.services .leftCol button {
     font-family: Montserrat;
     color: white;
     background-color: transparent;
@@ -31,45 +31,44 @@
     outline: none;
 }
 
-.about .leftCol button:active {
+.services .leftCol button:active {
     opacity: 0.4;
     transform: scale(0.95);
 }
 
-.about .leftCol div {
+.services .leftCol div {
     height: 2px;
 }
 
-.about .leftCol .buttonBorder {
+.services .leftCol .buttonBorder {
     height: 2px;
-    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
+    background: linear-gradient(to right, #4B54CE, #00ECD0);
     border: 0;
 }
 
-.about .rightCol {
+.services .rightCol {
     height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.about .rightCol text {
+.services .rightCol text {
     font-family: Montserrat;
     text-align: justify;
     font-size: 1.2vw;
     color: white;
 }
 
-.about .rightCol text:not(:first-child) {
+.services .rightCol text:not(:first-child) {
     padding-top: 5vh;
 }
 
-.about .rightCol .aboutFirstText {
+.services .rightCol .aboutFirstText {
     text-indent: 1.5vw;
     padding-top: 0px !important;
 }
-
-.about .rightCol div {
+.services .rightCol div {
     transition: visibility 0.3s, opacity 0.3s;
     transition-delay: 0.2s;
     opacity: 1;
@@ -82,8 +81,42 @@
     flex-direction: column;
 }
 
-.about .rightCol .hide {
+.services .rightCol .hide {
     visibility: hidden;
     transition-delay: 0.0s !important;
     opacity: 0;
+}
+
+.services .rightCol .divButton {
+    background: linear-gradient(to right, #4B54CE, #00ECD0);
+    width: 15vw;
+    height: 5vh;
+    padding: 2px;
+    border-radius: 0.6vw;
+    right: 8vw;
+    top: 65vh;
+}
+
+.services .rightCol .divButton:active {
+    transform: scale(0.98);
+}
+
+.services .rightCol button {
+    background-color: white;
+    border: none;
+    border-radius: 0.6vw;
+    height: 100%;
+    outline: none;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 1.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.services .rightCol button img {
+    width: 1vw;
+    margin-left: 1vw;
 }
