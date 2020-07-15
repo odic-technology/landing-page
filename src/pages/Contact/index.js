@@ -15,6 +15,8 @@ export default function Contact () {
   const [isSecondSelected, setIsSecondSelected] = useState(false)
   const [isThirdSelected, setIsThirdSelected] = useState(false)
 
+  const [quatitySelected, setQuatitySelected] = useState(0)
+
   function selectItem () {
     if (typeSelected === 1) {
       setIsFirstSelected(!isFirstSelected)
@@ -74,8 +76,30 @@ export default function Contact () {
                 <text className={typeSelected === 3 ? 'textSelected' : ''}>Gostaria de criar uma identidade visual para impactar diretamente no sucesso de seus negócios? você veio ao lugar certo!</text>
               </div>
               <div className='cardContactButton'>
-                <button onClick={() => selectItem()}>Tenho interesse!</button>
+                <button
+                  onClick={() => { selectItem() }}
+                  className={
+                    typeSelected === 1 && isFirstSelected ? 'typeChecked'
+                      : typeSelected === 2 && isSecondSelected ? 'typeChecked'
+                        : typeSelected === 3 && isThirdSelected ? 'typeChecked'
+                          : ''
+                  }
+                >
+                  {
+                    typeSelected === 1 && isFirstSelected ? 'Desfazer'
+                      : typeSelected === 2 && isSecondSelected ? 'Desfazer'
+                        : typeSelected === 3 && isThirdSelected ? 'Desfazer'
+                          : 'Tenho interesse!'
+                  }
+                </button>
               </div>
+            </div>
+            <div>
+              <text>
+                {
+
+                }
+              </text>
             </div>
           </div>
         </Col>
