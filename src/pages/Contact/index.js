@@ -3,15 +3,27 @@ import OdicHeader from '../../components/Header/OdicHeader'
 import { Row, Col } from 'antd'
 import { Link } from 'react-router-dom'
 
-import Mobile from '../../assets/mobileIcon.svg'
-import Web from '../../assets/webIcon.svg'
-import Design from '../../assets/designIcon.svg'
+import CheckIcon from '../../assets/checkIcon.svg'
 import Smile from '../../assets/smileIcon.svg'
 
 import './contactStyle.css'
 
 export default function Contact () {
   const [typeSelected, setTypeSelected] = useState(1)
+
+  const [isFirstSelected, setIsFirstSelected] = useState(false)
+  const [isSecondSelected, setIsSecondSelected] = useState(false)
+  const [isThirdSelected, setIsThirdSelected] = useState(false)
+
+  function selectItem () {
+    if (typeSelected === 1) {
+      setIsFirstSelected(!isFirstSelected)
+    } else if (typeSelected === 2) {
+      setIsSecondSelected(!isSecondSelected)
+    } else if (typeSelected === 3) {
+      setIsThirdSelected(!isThirdSelected)
+    }
+  }
 
   return (
     <div className='contact'>
@@ -39,9 +51,21 @@ export default function Contact () {
           </div>
           <div className='cardContact'>
             <div className='cardContactHeader'>
-              <text onClick={() => setTypeSelected(1)} className={typeSelected === 1 ? 'headerSelected' : ''}>Web</text>
-              <text onClick={() => setTypeSelected(2)} className={typeSelected === 2 ? 'headerSelected' : ''}>Mobile</text>
-              <text onClick={() => setTypeSelected(3)} className={typeSelected === 3 ? 'headerSelected' : ''}>Design</text>
+              <div className='cardContactType'>
+                <text onClick={() => setTypeSelected(1)} className={typeSelected === 1 ? 'headerSelected' : ''}>Web</text>
+                <div className={typeSelected === 1 ? 'headerSelectedTriangle' : ''} />
+                <img src={CheckIcon} className={isFirstSelected ? 'headerSelectedCheck' : ''} />
+              </div>
+              <div className='cardContactType'>
+                <text onClick={() => setTypeSelected(2)} className={typeSelected === 2 ? 'headerSelected' : ''}>Mobile</text>
+                <div className={typeSelected === 2 ? 'headerSelectedTriangle' : ''} />
+                <img src={CheckIcon} className={isSecondSelected ? 'headerSelectedCheck' : ''} />
+              </div>
+              <div className='cardContactType'>
+                <text onClick={() => setTypeSelected(3)} className={typeSelected === 3 ? 'headerSelected' : ''}>Design</text>
+                <div className={typeSelected === 3 ? 'headerSelectedTriangle' : ''} />
+                <img src={CheckIcon} className={isThirdSelected ? 'headerSelectedCheck' : ''} />
+              </div>
             </div>
             <div className='cardContactContent'>
               <div>
@@ -50,7 +74,7 @@ export default function Contact () {
                 <text className={typeSelected === 3 ? 'textSelected' : ''}>Gostaria de criar uma identidade visual para impactar diretamente no sucesso de seus negócios? você veio ao lugar certo!</text>
               </div>
               <div className='cardContactButton'>
-                <button>Tenho interesse!</button>
+                <button onClick={() => selectItem()}>Tenho interesse!</button>
               </div>
             </div>
           </div>
