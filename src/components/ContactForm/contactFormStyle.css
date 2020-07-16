@@ -1,0 +1,43 @@
+.contactForm .cardContact .cardContactHeader div {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100%;
+  padding: 0px 1vw;
+}
+
+.contactForm .cardContact .cardContactHeader div text {
+  padding: 2vh 0px !important;
+  font-size: 1.15vw;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+.contactForm .cardContact .cardContactHeader div img {
+  width: 2vw;
+  cursor: pointer;
+  margin-left: 0.5vw;
+}
+
+.contactForm .cardContact .cardContactContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactForm .cardContact .cardContactContent input {
+  border: none;
+  border-radius: 10px;
+  width: 75%;
+  height: 6vh;
+  outline: none;
+  font-family: Montserrat;
+  padding: 0px 1vw;
+  font-size: 1vw;
+}
+
+.contactForm .bottomRightColumn {
+  justify-content: flex-end !important;
+}
