@@ -1,0 +1,200 @@
+.contact .rightCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 8vw;
+}
+
+.contact .rightCol .hide {
+  display: none;
+}
+
+.contact .rightCol .divText {
+  font-size: 1.5vw;
+  font-family: Montserrat;
+  color: white;
+  margin-bottom: 8vh;
+}
+
+.contact .rightCol .divText text {
+  display: flex;
+}
+
+.contact .rightCol .divText text text {
+  font-weight: 600;
+}
+
+.contact .rightCol .cardContact {
+  background-color: #0B94A7;
+  border-radius: 10px;
+}
+
+.contact .rightCol .cardContact .cardContactHeader {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: Montserrat;
+  font-size: 1.3vw;
+}
+
+.contact .rightCol .cardContact .cardContactHeader div {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .rightCol .cardContact .cardContactHeader .cardContactType div {
+  visibility: hidden;
+  transition: visibility 0.3s, opacity 0.3s;
+  transition-delay: 0.0s;
+  opacity: 0;
+}
+
+.contact .rightCol .cardContact .cardContactHeader .headerSelectedTriangle {
+  visibility: visible !important;
+  transition-delay: 0.2s !important;
+  opacity: 1 !important;
+}
+
+.contact .rightCol .cardContact .cardContactHeader text {
+  cursor: pointer;
+  padding: 2vh 4vh;
+  padding-bottom: 0px;
+}
+
+.contact .rightCol .cardContact .headerSelected {
+  font-weight: 900;
+}
+
+.contact .rightCol .cardContact .cardContactHeader .cardContactType div {
+  border-bottom: 3vh solid #B1EAF2;
+  width: 0;
+  height: 0vh;
+  border-left: 1.5vh solid transparent;
+  border-right: 1.5vh solid transparent;
+  margin-bottom: -0.5vh;
+}
+
+.contact .rightCol .cardContact .cardContactHeader .cardContactType img {
+  position: absolute;
+  width: 1.2vw;
+  right: 0.4vw;
+  top: 1.4vh;
+  visibility: hidden;
+  transition: visibility 0.2s, opacity 0.2s;
+  transition-delay: 0.0s;
+  opacity: 0;
+}
+
+.contact .rightCol .cardContact .cardContactHeader .cardContactType .headerSelectedCheck {
+  visibility: visible;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+.contact .rightCol .cardContact .cardContactContent {
+  background-color: #B1EAF2;
+  border-radius: 10px;
+  height: 34vh;
+  width: 28vw;
+}
+
+.contact .rightCol .cardContact .cardContactContent text {
+  visibility: hidden;
+  position: absolute;
+  width: 28vw;
+  padding: 4vh;
+  padding-bottom: 0px;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 1.2vw;
+  transition: visibility 0.3s, opacity 0.3s;
+  transition-delay: 0.0s;
+  opacity: 0;
+}
+
+.contact .rightCol .cardContact .cardContactContent .textSelected {
+  visibility: visible;
+  transition-delay: 0.2s !important;
+  opacity: 1;
+}
+
+.contact .rightCol .cardContact .cardContactContent button {
+  background-color: #00C564;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  height: 6.5vh;
+  width: 10vw;
+  font-size: 1vw;
+  box-shadow: 0px 4px 4px #00000070;
+  cursor: pointer;
+  outline: none;
+}
+
+.contact .rightCol .cardContact .cardContactContent button:active {
+  opacity: 0.9;
+  transform: scale(0.98);
+}
+
+.contact .rightCol .cardContact .cardContactContent .cardContactButton {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 3vh;
+}
+
+.contact .rightCol .cardContact .cardContactContent .cardContactButton .typeChecked {
+  background-color: #E4021D;
+}
+
+.contact .rightCol .bottomRightColumn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 28vw;
+  margin-top: 3vh;
+}
+
+.contact .rightCol .bottomRightColumn text {
+  color: #00FF57;
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: bold;
+  visibility: visible;
+}
+
+.contact .rightCol .bottomRightColumn .hideText {
+  visibility: hidden;
+}
+
+.contact .rightCol .bottomRightColumn div {
+  background: linear-gradient(to right, #4B54CE, #00ECD0);
+  border-radius: 15px;
+  padding: 2px;
+}
+
+.contact .rightCol .bottomRightColumn button {
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  height: 7vh;
+  width: 11.4vw;
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 700;
+  outline: none;
+}
+
+.contact .rightCol .bottomRightColumn div:active {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+.contact .rightCol .bottomRightColumn button img {
+  margin-left: 0.6vw;
+}
