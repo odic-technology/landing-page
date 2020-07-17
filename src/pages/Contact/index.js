@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import OdicHeader from '../../components/Header/OdicHeader'
 import { Row, Col } from 'antd'
-import { Link } from 'react-router-dom'
 
 import ContactRightColumn from '../../components/ContactRightCol'
 import ContactForm from '../../components/ContactForm'
+import ContactSuccess from '../../components/ContactSuccess'
 import Smile from '../../assets/smileIcon.svg'
 
 import './contactStyle.css'
@@ -18,7 +18,7 @@ export default function Contact () {
 
   const [quantitySelected, setQuantitySelected] = useState(0)
 
-  const [isFormAvailable, setIsFormAvailable] = useState(false)
+  const [formAvailable, setFormAvailable] = useState(1)
 
   function selectItem () {
     if (typeSelected === 1) {
@@ -55,11 +55,14 @@ export default function Contact () {
           </div>
         </Col>
         <Col span={10} className='rightCol'>
-          <div className={isFormAvailable ? 'hide' : ''}>
-            <ContactRightColumn setTypeSelected={setTypeSelected} typeSelected={typeSelected} isFirstSelected={isFirstSelected} isSecondSelected={isSecondSelected} isThirdSelected={isThirdSelected} selectItem={selectItem} quantitySelected={quantitySelected} setIsFormAvailable={setIsFormAvailable} />
+          <div className={formAvailable !== 1 ? 'hide' : ''}>
+            <ContactRightColumn setTypeSelected={setTypeSelected} typeSelected={typeSelected} isFirstSelected={isFirstSelected} isSecondSelected={isSecondSelected} isThirdSelected={isThirdSelected} selectItem={selectItem} quantitySelected={quantitySelected} setFormAvailable={setFormAvailable} />
           </div>
-          <div className={!isFormAvailable ? 'hide' : ''}>
-            <ContactForm />
+          <div className={formAvailable !== 2 ? 'hide' : ''}>
+            <ContactForm setFormAvailable={setFormAvailable} />
+          </div>
+          <div className={formAvailable !== 3 ? 'hide' : ''}>
+            <ContactSuccess />
           </div>
         </Col>
       </Row>

@@ -1,3 +1,7 @@
+.contactForm {
+  margin-top: 4vh;
+}
+
 .contactForm .cardContact .cardContactHeader div {
   display: flex !important;
   flex-direction: row !important;
@@ -30,7 +34,7 @@
 .contactForm .cardContact .cardContactContent input {
   border: none;
   border-radius: 10px;
-  width: 75%;
+  width: 80%;
   height: 6vh;
   outline: none;
   font-family: Montserrat;

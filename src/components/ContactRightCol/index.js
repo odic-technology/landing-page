@@ -5,7 +5,7 @@ import RightArrow from '../../assets/rightArrow.svg'
 
 import './contactRightColStyle.css'
 
-export default function ContactRightColumn ({ setTypeSelected, typeSelected, isFirstSelected, isSecondSelected, isThirdSelected, selectItem, quantitySelected, setIsFormAvailable }) {
+export default function ContactRightColumn ({ setTypeSelected, typeSelected, isFirstSelected, isSecondSelected, isThirdSelected, selectItem, quantitySelected, setFormAvailable }) {
   return (
     <>
       <div className='divText'>
@@ -60,7 +60,7 @@ export default function ContactRightColumn ({ setTypeSelected, typeSelected, isF
       <div className='bottomRightColumn'>
         <text className={quantitySelected === 0 ? 'hideText' : ''}>{quantitySelected} de 3 selecionado(s)</text>
         <div>
-          <button onClick={() => setIsFormAvailable(true)}><img />Solicitar contato<img src={RightArrow} /></button>
+          <button onClick={() => setFormAvailable(2)}><img />Solicitar contato<img src={RightArrow} /></button>
         </div>
       </div>
     </>

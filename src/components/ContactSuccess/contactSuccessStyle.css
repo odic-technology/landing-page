@@ -1,0 +1,17 @@
+.contactSuccess .cardContact .cardContactHeader {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 28vw;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.contactSuccess .cardContact .cardContactHeader text {
+    margin-bottom: 7vh;
+    text-align: justify;
+}
+
+.contactSuccess .cardContact .cardContactHeader img {
+    width: 4vw;
+}

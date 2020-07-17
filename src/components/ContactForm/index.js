@@ -5,7 +5,7 @@ import LeftArrow from '../../assets/leftArrow.svg'
 
 import './contactFormStyle.css'
 
-export default function ContactForm () {
+export default function ContactForm ({ setFormAvailable }) {
   return (
     <>
       <div className='contactForm'>
@@ -16,7 +16,7 @@ export default function ContactForm () {
         <div className='cardContact'>
           <div className='cardContactHeader'>
             <div>
-              <img src={LeftArrow} />
+              <img src={LeftArrow} onClick={() => setFormAvailable(1)} />
               <text>Preencha os campos abaixo:</text>
               <img />
             </div>
@@ -29,7 +29,7 @@ export default function ContactForm () {
         </div>
         <div className='bottomRightColumn'>
           <div>
-            <button>
+            <button onClick={() => setFormAvailable(3)}>
               <img />
               Enviar
               <img src={RightArrow} />
