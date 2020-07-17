@@ -1,11 +1,18 @@
 import React from 'react'
+import InputMask from 'react-input-mask'
+import * as EmailValidator from 'email-validator'
 
 import RightArrow from '../../assets/rightArrow.svg'
 import LeftArrow from '../../assets/leftArrow.svg'
 
 import './contactFormStyle.css'
 
-export default function ContactForm ({ setFormAvailable }) {
+export default function ContactForm ({ setFormAvailable, name, setName, email, setEmail, phone, setPhone }) {
+  function validateEmail (text) {
+    var isValid = EmailValidator.validate(text)
+    console.log(isValid)
+  }
+
   return (
     <>
       <div className='contactForm'>
@@ -23,8 +30,8 @@ export default function ContactForm ({ setFormAvailable }) {
           </div>
           <div className='cardContactContent'>
             <input placeholder='Nome completo' />
-            <input placeholder='E-mail' />
-            <input placeholder='Telefone para contato' />
+            <input placeholder='E-mail' onChange={(event) => validateEmail(event.target.value)} />
+            <InputMask placeholder='Telefone para contato' mask='(99) 99999-9999' />
           </div>
         </div>
         <div className='bottomRightColumn'>

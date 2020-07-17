@@ -20,6 +20,10 @@ export default function Contact () {
 
   const [formAvailable, setFormAvailable] = useState(1)
 
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+
   function selectItem () {
     if (typeSelected === 1) {
       if (!isFirstSelected) setQuantitySelected(quantitySelected + 1)
@@ -61,7 +65,7 @@ export default function Contact () {
           <div className={formAvailable !== 2 ? 'hide' : ''}>
             <ContactForm setFormAvailable={setFormAvailable} />
           </div>
-          <div className={formAvailable !== 3 ? 'hide' : ''}>
+          <div className={formAvailable !== 3 ? 'hide' : ''} setName={setName} name={name} email={email} setEmail={setEmail} phone={phone} setPhone={setPhone}>
             <ContactSuccess />
           </div>
         </Col>
