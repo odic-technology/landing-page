@@ -13,7 +13,7 @@ export default function ContactSuccess () {
         <div className='cardContact'>
           <div className='cardContactHeader'>
             <text>Agradecemos o interesse! Iremos entrar em contato pelo e-mail e/ou telefone preenchido assim que possível.</text>
-            <img src={SmileIcon2} />
+            <img src={SmileIcon2} alt='' />
           </div>
         </div>
       </div>

@@ -20,10 +20,6 @@ export default function Contact () {
 
   const [formAvailable, setFormAvailable] = useState(1)
 
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-
   function selectItem () {
     if (typeSelected === 1) {
       if (!isFirstSelected) setQuantitySelected(quantitySelected + 1)
@@ -63,9 +59,9 @@ export default function Contact () {
             <ContactRightColumn setTypeSelected={setTypeSelected} typeSelected={typeSelected} isFirstSelected={isFirstSelected} isSecondSelected={isSecondSelected} isThirdSelected={isThirdSelected} selectItem={selectItem} quantitySelected={quantitySelected} setFormAvailable={setFormAvailable} />
           </div>
           <div className={formAvailable !== 2 ? 'hide' : ''}>
-            <ContactForm setFormAvailable={setFormAvailable} />
+            <ContactForm setFormAvailable={setFormAvailable} isFirstSelected={isFirstSelected} isSecondSelected={isSecondSelected} isThirdSelected={isThirdSelected} />
           </div>
-          <div className={formAvailable !== 3 ? 'hide' : ''} setName={setName} name={name} email={email} setEmail={setEmail} phone={phone} setPhone={setPhone}>
+          <div className={formAvailable !== 3 ? 'hide' : ''}>
             <ContactSuccess />
           </div>
         </Col>

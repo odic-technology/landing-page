@@ -18,17 +18,17 @@ export default function ContactRightColumn ({ setTypeSelected, typeSelected, isF
           <div className='cardContactType'>
             <text onClick={() => setTypeSelected(1)} className={typeSelected === 1 ? 'headerSelected' : ''}>Web</text>
             <div className={typeSelected === 1 ? 'headerSelectedTriangle' : ''} />
-            <img src={CheckIcon} className={isFirstSelected ? 'headerSelectedCheck' : ''} />
+            <img src={CheckIcon} className={isFirstSelected ? 'headerSelectedCheck' : ''} alt='' />
           </div>
           <div className='cardContactType'>
             <text onClick={() => setTypeSelected(2)} className={typeSelected === 2 ? 'headerSelected' : ''}>Mobile</text>
             <div className={typeSelected === 2 ? 'headerSelectedTriangle' : ''} />
-            <img src={CheckIcon} className={isSecondSelected ? 'headerSelectedCheck' : ''} />
+            <img src={CheckIcon} className={isSecondSelected ? 'headerSelectedCheck' : ''} alt='' />
           </div>
           <div className='cardContactType'>
             <text onClick={() => setTypeSelected(3)} className={typeSelected === 3 ? 'headerSelected' : ''}>Design</text>
             <div className={typeSelected === 3 ? 'headerSelectedTriangle' : ''} />
-            <img src={CheckIcon} className={isThirdSelected ? 'headerSelectedCheck' : ''} />
+            <img src={CheckIcon} className={isThirdSelected ? 'headerSelectedCheck' : ''} alt='' />
           </div>
         </div>
         <div className='cardContactContent'>
@@ -60,7 +60,7 @@ export default function ContactRightColumn ({ setTypeSelected, typeSelected, isF
       <div className='bottomRightColumn'>
         <text className={quantitySelected === 0 ? 'hideText' : ''}>{quantitySelected} de 3 selecionado(s)</text>
         <div>
-          <button onClick={() => setFormAvailable(2)}><img />Solicitar contato<img src={RightArrow} /></button>
+          <button onClick={() => setFormAvailable(2)}><img alt='' />Solicitar contato<img src={RightArrow} alt='' /></button>
         </div>
       </div>
     </>
