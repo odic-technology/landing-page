@@ -1,0 +1,54 @@
+.odicLogo {
+    margin-top: 25px;
+    margin-left: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+.odicLogo div {
+    margin-top: 4.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.odicLogo text:first-child {
+    margin-bottom: 1.1vh;
+}
+
+.odicLogo text {
+    font-family: Prata;
+    color: white;
+    margin-left: 8px;
+    font-size: 2.5vw;
+}
+
+.odicLogo .hideDesktop {
+    display: none;
+}
+
+.odicLogo .hideItem {
+    visibility: hidden;
+}
+
+@media (max-width: 600px) {
+    .odicLogo {
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .odicLogo img {
+        width: 25vw;
+        margin-top: 3.5vh;
+    }
+
+    .odicLogo .hideDesktop {
+        display: flex;
+    }
+}

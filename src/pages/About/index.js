@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import OdicHeader from '../../components/Header/OdicHeader'
 import { Row, Col } from 'antd'
 import './about-style.css'
+import OdicLogo from '../../components/OdicLogo/OdicLogo'
 
 export default function About () {
   const [textSelecioned, setTextSelecioned] = useState(1)
 
   return (
     <div className='about'>
+      <OdicLogo hideInDesktop text='Sobre' />
       <OdicHeader />
       <Row>
         <Col span={11} className='leftCol'>

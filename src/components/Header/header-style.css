@@ -6,16 +6,31 @@
     position: absolute;
     right: 0px;
     top: 0px;
-    z-index: 10;
+    z-index: 11;
 }
 
-#menuHorizontal {
+#menu {
     transition: opacity 0.5s, margin-right 0.5s, visibility 0.5s;
     transition-timing-function: ease-out;
     margin-right: -7vw;
     opacity: 0;
     z-index: 8;
     visibility: hidden;
+    display: flex;
+}
+
+#menu a {
+    padding: 0px 0.8vw;
+    display: flex;
+    align-items: center;
+}
+
+#menu a p {
+    margin: 0px;
+}
+
+#menu .closeMenuIcon {
+    display: none;
 }
 
 .open {
@@ -39,13 +54,9 @@
     font-family: Montserrat;
 }
 
-.basic:hover {
-    border: red;
-}
-
 .menuButton {
     border: none !important;
-    height: 40px;
+    height: 45px;
     width: 7vw;
     display: flex;
     justify-content: center;
@@ -86,11 +97,6 @@
     outline: none !important;
 }
 
-.menuButtonContact:hover {
-    background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
-    
-}
-
 .menuButtonContact text {
     color: white;
     font-family: Montserrat;
@@ -98,10 +104,90 @@
     font-size: 13px;
 }
 
-.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
-    border-bottom: 2px solid #FFFFFF !important;
+.header .showMenuBorder {
+    border-bottom: 1px solid white;
 }
 
-.ant-menu-item, .ant-menu-submenu-title {
-    padding: 0 1vw !important;
+@media (max-width: 600px) {
+    .header {
+        margin-top: 2.5vh;
+    }
+
+    #menu {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: rgb(48, 68, 72);
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s, visibility 0.3s;
+        transition-timing-function: ease-out;
+        opacity: 0;
+        visibility: hidden;
+        margin: 0px;
+        margin-top: -20px;
+    }
+
+    .open {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    #menu a {
+        padding: 3.5vh 0px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu a:active {
+        background-color: #09292F;
+    }
+
+    #menu .closeMenuIcon {
+        display: flex;
+        justify-content: flex-end;
+        width: 100vw;
+        margin-bottom: 2vh;
+    }
+
+    #menu .closeMenuIcon img {
+        padding: 4vh 7.8vw;
+    }
+
+    .basic {
+        font-family: Prata;
+        font-size: 5vw;
+    }
+
+    .menuButton {
+        width: auto;
+        margin-right: 8vw;
+    }
+
+    .menuButtonContact {
+        width: 55vw;
+        height: 7vh;
+    }
+
+    .menuButtonContact text {
+        font-family: Prata;
+        font-size: 5vw;
+    }
+
+    .header .menuButton .menuText {
+        display: none;
+    }
+
+    .header .menuButton img {
+        width: 6vw;
+    }
+
+    .header .showMenuBorder {
+        border-bottom: 0px;
+    }
 }
