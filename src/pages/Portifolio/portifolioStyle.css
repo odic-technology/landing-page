@@ -5,7 +5,7 @@
 .portifolio .title {
     font-size: 5vw;
     font-family: Prata;
-    color: white;
+    color: rgb(172, 105, 105);
     margin-top: 5vh;
     margin-left: 5vw;
 }
@@ -109,4 +109,60 @@
 
 .portifolio .cards .cardDesign img {
     width: 2.6vw;
+}
+
+@media (max-width: 600px) {
+    .portifolio .title {
+        display: none;
+    }
+
+    .portifolio .subTitle {
+        margin-top: 15vh;
+        font-size: 5vw;
+    }
+
+    .portifolio .cards {
+        max-height: 78vh;
+        overflow: auto;
+        margin-top: 2vh;
+    }
+
+    .portifolio .cards .cardRow {
+        margin-top: 4vh;
+        margin-bottom: 1vh;
+    }
+
+    .portifolio .cards div {
+        height: 27vh;
+    }
+
+    .portifolio .cards .cardMobile {
+        width: 18vh;
+    }
+
+    .portifolio .cards .cardWeb {
+        width: 27vh;
+    }
+
+    .portifolio .cards .cardDesign {
+        width: 27vh;
+        margin-left: 0px;
+    }
+
+    .portifolio .cards text {
+        font-size: 1.9vh;
+        font-weight: 700;
+    }
+
+    .portifolio .cards img {
+        width: 8vw;
+    }
+    
+    .portifolio .cards .cardWeb img {
+        width: 15vw;
+    }
+    
+    .portifolio .cards .cardDesign img {
+        width: 10vw;
+    }
 }

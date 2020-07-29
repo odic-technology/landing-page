@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import OdicHeader from '../../components/Header/OdicHeader'
-import { Row, Col } from 'antd'
 import './about-style.css'
 import OdicLogo from '../../components/OdicLogo/OdicLogo'
 
@@ -11,8 +10,8 @@ export default function About () {
     <div className='about'>
       <OdicLogo hideInDesktop text='Sobre' />
       <OdicHeader />
-      <Row>
-        <Col span={11} className='leftCol'>
+      <div className='aboutContent'>
+        <div className='leftCol'>
           <text>Sobre</text>
 
           <button onClick={() => setTextSelecioned(1)}>
@@ -34,8 +33,8 @@ export default function About () {
               Nosso foco
             <div className={textSelecioned === 4 ? 'buttonBorder' : ''} />
           </button>
-        </Col>
-        <Col span={13} className='rightCol'>
+        </div>
+        <div className='rightCol'>
           <div className={textSelecioned !== 1 ? 'hide' : ''}>
             <text className='aboutFirstText'>A empresa foi fundada em 2019 por um grupo de amigos de diferentes áreas do conhecimento: de Ciências Humanas a Ciências Naturais e Computação. O único interesse em comum entre todos, era, como facilitar a vida das pessoas próximas de nossos convívios.</text>
             <text className='aboutFirstText'>No início, a ideia era de apenas desenvolver algumas estratégias de melhoria de atividades do cotidiano; nós queríamos aproximar as pessoas, fazer com que elas interagissem entre si e pudessem ajudar umas às outras da melhor maneira possível.</text>
@@ -55,8 +54,8 @@ export default function About () {
             <text>Nosso foco sempre será: ajudar nossos clientes a desenvolverem, da maneira mais completa, as ideias mais profundas que tiveram para criar ou recriar soluções inovadoras que irão dar aquela alavancada em seus objetivos. Desta forma, além de lhe proporcionar uma experiência incrível, iremos tornar seu negócio mais atrativo e fazer com que mais e mais pessoas saibam quem você realmente é. </text>
             <text>Ainda não tem uma boa ideia para resolver um problema? sem problemas, nós também iremos te ajudar com isso!</text>
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </div>
   )
 }

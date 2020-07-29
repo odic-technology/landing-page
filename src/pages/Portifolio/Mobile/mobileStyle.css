@@ -10,3 +10,9 @@
   width: 85vw;
   margin-bottom: 5vh;
 }
+
+@media (max-width: 600px) {
+  .portifolioMobile .divCard {
+    display: none;
+  }
+}

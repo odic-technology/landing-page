@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Row, Col } from 'antd'
 import { Link } from 'react-router-dom'
 
+import OdicLogo from '../../components/OdicLogo/OdicLogo'
 import OdicHeader from '../../components/Header/OdicHeader'
 import Mobile from '../../assets/mobileIcon.svg'
 import MobileWhite from '../../assets/mobileIconWhite.svg'
@@ -19,6 +20,7 @@ export default function Portfolio () {
 
   return (
     <div className='portifolio'>
+      <OdicLogo hideInDesktop text='Portifólio' />
       <OdicHeader />
       <Row>
         <text className='title'>Portifólio</text>

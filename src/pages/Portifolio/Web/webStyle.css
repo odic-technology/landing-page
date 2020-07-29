@@ -22,7 +22,6 @@
   padding: 2vh;
 }
 
-
 .portifolioWeb .content text {
   font-size: 1.3vw;
   font-family: Montserrat;
@@ -33,4 +32,29 @@
 
 .portifolioWeb .content img {
   width: 35vw;
+}
+
+@media (max-width: 600px) {
+  .portifolioWeb .content {
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portifolioWeb .content .contentBackground {
+    width: 70vw;
+    margin-bottom: 5vh;
+  }
+
+  .portifolioWeb .content .contentBackground div {
+    padding: 1vh 2vh;
+  }
+
+  .portifolioWeb .content text {
+    font-size: 3vw;
+  }
+
+  .portifolioWeb .content img {
+    width: 70vw;
+  }
 }

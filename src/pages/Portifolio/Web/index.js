@@ -1,5 +1,6 @@
 import React from 'react'
 
+import OdicLogo from '../../../components/OdicLogo/OdicLogo'
 import OdicHeader from '../../../components/Header/OdicHeader'
 import PortifolioHeader from '../../../components/PortifolioHeader/PortifolioHeader'
 import Matchfy from '../../../assets/cardMatchfy.svg'
@@ -8,6 +9,7 @@ import './webStyle.css'
 export default function Web () {
   return (
     <div className='portifolioWeb'>
+      <OdicLogo hideInDesktop text='Portifólio' />
       <OdicHeader />
       <PortifolioHeader title='Páginas Web' />
       <div className='content'>

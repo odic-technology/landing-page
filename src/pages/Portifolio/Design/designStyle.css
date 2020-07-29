@@ -27,3 +27,27 @@
     margin-bottom: 8vh;
     font-weight: 300;
 }
+
+@media (max-width: 600px) {
+    .portifolioDesign .divCard {
+        overflow-y: auto;
+        max-height: 80.8vh;
+        justify-content: flex-start;
+    }
+
+    .portifolioDesign .divCard .title {
+        margin-top: 0px;
+        margin-left: 8vw;
+        font-size: 3.5vw;
+    }
+
+    .portifolioDesign .divCard img {
+        margin-bottom: 1vh;
+    }
+
+    .portifolioDesign .divCard .subTitle {
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        margin-left: 8vw;
+    }
+}

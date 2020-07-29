@@ -2,6 +2,10 @@
     height: 100vh;
 }
 
+.about .aboutContent {
+    display: flex;
+}
+
 .about .leftCol {
     display: flex;
     flex-direction: column;
@@ -9,6 +13,7 @@
     align-items: flex-start;
     height: 100vh;
     padding-left: 8vw;
+    width: 45vw;
 }
 
 .about .leftCol text {
@@ -51,6 +56,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 55vw;
 }
 
 .about .rightCol text {
@@ -73,7 +79,7 @@
     transition: visibility 0.3s, opacity 0.3s;
     transition-delay: 0.2s;
     opacity: 1;
-    width: 100%;
+    width: 55vw;
     padding-right: 8vw;
     position: absolute;
     padding-top: 8vh;
@@ -86,4 +92,69 @@
     visibility: hidden;
     transition-delay: 0.0s !important;
     opacity: 0;
+}
+
+@media (max-width: 600px) {
+    .about .header .menuButton {
+        background-color: #09292F;
+    }
+    
+    .about .aboutContent {
+        flex-direction: column;
+    }
+
+    .about .leftCol text {
+        display: none;
+    }
+
+    .about .leftCol {
+        height: 20vh;
+        flex-direction: row;
+        width: 100vw;
+        padding: 0px;
+        padding-top: 12vh;
+        background-color: #09292F;
+    }
+
+    .about .leftCol .buttonBorder {
+        height: 1px;
+    }
+
+    .about .leftCol button {
+        font-size: 3.5vw;
+    }
+
+    .about .rightCol {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100vw;
+        height: 80vh;
+        padding-top: 2vh;
+    }
+
+    .about .rightCol text {
+        font-size: 3.8vw;
+    }
+
+    .about .rightCol div {
+        width: 100vw;
+        padding: 7vh 7vw 0vh 7vw;
+        max-height: 77vh;
+        overflow: auto;
+    }
+
+    .about .rightCol div:first-child {
+        padding-top: 0px;
+    }
+
+    .about .rightCol .aboutFirstText {
+        text-indent: 4vw;
+    }
+
+
+    .about .rightCol text:not(:first-child) {
+        padding-top: 5vh;
+    }
 }
