@@ -37,7 +37,7 @@
 }
 
 .about .leftCol button:active {
-    opacity: 0.4;
+    opacity: 0.6;
     transform: scale(0.95);
 }
 

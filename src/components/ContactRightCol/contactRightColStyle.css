@@ -98,13 +98,14 @@
   background-color: #B1EAF2;
   border-radius: 10px;
   height: 34vh;
-  width: 28vw;
+  width: 100%;
+  position: relative;
 }
 
 .contact .rightCol .cardContact .cardContactContent text {
   visibility: hidden;
   position: absolute;
-  width: 28vw;
+  width: 100%;
   padding: 4vh;
   padding-bottom: 0px;
   text-align: justify;
@@ -202,4 +203,83 @@
 
 .contact .rightCol .bottomRightColumn button img {
   width: 1vw;
+}
+
+@media (max-width: 600px) {
+  .contact .contactRightCol {
+    width: 100vw;
+    padding: 0px 10vw;
+  }
+
+  .contact .rightCol .divText {
+    font-size: 3.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
+
+  .contact .rightCol .cardContact .cardContactContent {
+    height: 29vh;
+  }
+
+  .contact .rightCol .cardContact .cardContactHeader {
+    padding: 0px 2vw;
+  }
+
+  .contact .rightCol .cardContact .cardContactHeader text {
+    font-size: 4.4vw;
+    padding: 2vh 2vh;
+    padding-bottom: 0px;
+  }
+
+  .contact .rightCol .cardContact .cardContactHeader .cardContactType div {
+    margin-bottom: -1.5vh;
+  }
+
+  .contact .rightCol .cardContact .cardContactContent text {
+    font-size: 3.6vw;
+    font-weight: 600;
+  }
+
+  .contact .rightCol .cardContact .cardContactContent button {
+    width: 35vw;
+    height: 6vh;
+    font-size: 3.5vw;
+    font-weight: 600;
+  }
+
+  .contact .rightCol .bottomRightColumn {
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .contact .rightCol .bottomRightColumn text {
+    width: 100%;
+    text-align: center;
+    font-size: 3.2vw;
+  }
+
+  .contact .rightCol .bottomRightColumn div {
+    border-radius: 11px;
+    margin-top: 3vh;
+  }
+  
+  .contact .rightCol .bottomRightColumn button {
+    width: 38vw;
+    height: 5vh;
+    border-radius: 11px;
+    font-size: 3vw;
+  }
+
+  .contact .rightCol .bottomRightColumn button img {
+    width: 3vw;
+    margin-left: 2vw;
+  }
+
+  .contact .rightCol .cardContact .cardContactHeader .cardContactType img {
+    width: 4vw;
+  }
 }

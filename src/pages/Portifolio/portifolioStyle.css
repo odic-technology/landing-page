@@ -5,9 +5,9 @@
 .portifolio .title {
     font-size: 5vw;
     font-family: Prata;
-    color: rgb(172, 105, 105);
     margin-top: 5vh;
     margin-left: 5vw;
+    color: white;
 }
 
 .portifolio .subTitle {
@@ -122,7 +122,7 @@
     }
 
     .portifolio .cards {
-        max-height: 78vh;
+        max-height: 79.4vh;
         overflow: auto;
         margin-top: 2vh;
     }

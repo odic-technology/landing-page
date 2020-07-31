@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
-import OdicHeader from '../../components/Header/OdicHeader'
-import { Row, Col } from 'antd'
 
+import OdicHeader from '../../components/Header/OdicHeader'
+import OdicLogo from '../../components/OdicLogo/OdicLogo'
 import ContactRightColumn from '../../components/ContactRightCol'
 import ContactForm from '../../components/ContactForm'
 import ContactSuccess from '../../components/ContactSuccess'
 import Smile from '../../assets/smileIcon.svg'
+import MobilePhoneIcon from '../../assets/mobilePhoneIcon.svg'
+import MobileEmailIcon from '../../assets/mobileEmailIcon.svg'
 
 import './contactStyle.css'
 
@@ -38,9 +40,10 @@ export default function Contact () {
 
   return (
     <div className='contact'>
+      <OdicLogo hideInDesktop text='Contato' />
       <OdicHeader />
-      <Row>
-        <Col span={14} className='leftCol'>
+      <div className='contactContent'>
+        <div className='leftCol'>
           <text className='title'>Contato</text>
           <div className='divSubTitle'>
             <text>Olá!</text>
@@ -53,8 +56,8 @@ export default function Contact () {
               <text><text>Celular:</text> (19) 99653-5534</text>
             </div>
           </div>
-        </Col>
-        <Col span={10} className='rightCol'>
+        </div>
+        <div className='rightCol'>
           <div className={formAvailable !== 1 ? 'hide' : ''}>
             <ContactRightColumn setTypeSelected={setTypeSelected} typeSelected={typeSelected} isFirstSelected={isFirstSelected} isSecondSelected={isSecondSelected} isThirdSelected={isThirdSelected} selectItem={selectItem} quantitySelected={quantitySelected} setFormAvailable={setFormAvailable} />
           </div>
@@ -64,8 +67,15 @@ export default function Contact () {
           <div className={formAvailable !== 3 ? 'hide' : ''}>
             <ContactSuccess />
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
+      <div className='contactFooter'>
+        <text>Fale conosco:</text>
+        <div>
+          <img alt='' src={MobileEmailIcon} />
+          <img alt='' src={MobilePhoneIcon} />
+        </div>
+      </div>
     </div>
   )
 }

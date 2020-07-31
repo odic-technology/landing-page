@@ -1,5 +1,4 @@
 .odicLogo {
-    margin-top: 25px;
     margin-left: 20px;
     position: absolute;
     display: flex;
@@ -26,7 +25,7 @@
     font-family: Prata;
     color: white;
     margin-left: 8px;
-    font-size: 2.5vw;
+    font-size: 3vw;
 }
 
 .odicLogo .hideDesktop {
@@ -39,7 +38,6 @@
 
 @media (max-width: 600px) {
     .odicLogo {
-        margin-top: 0px;
         margin-left: 20px;
     }
 

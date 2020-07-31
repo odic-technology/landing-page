@@ -1,5 +1,10 @@
+.portifolioMobile .divCardMobile {
+    display: none;
+}
+
 @media (max-width: 600px) {
     .portifolioMobile .divCardMobile {
+        display: block;
         padding-bottom: 2vh;
     }
 

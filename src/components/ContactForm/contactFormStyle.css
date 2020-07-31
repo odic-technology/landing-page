@@ -45,3 +45,24 @@
 .contactForm .bottomRightColumn {
   justify-content: flex-end !important;
 }
+
+@media (max-width: 600px) {
+  .contactForm {
+    width: 100vw;
+    margin-top: 0px;
+    padding: 0px 10vw;
+  }
+
+  .contactForm .cardContact .cardContactHeader div img {
+    width: 7vw;
+  }
+
+  .contact .rightCol .cardContact .cardContactHeader text {
+    font-size: 3.5vw;
+  }
+
+  .contactForm .cardContact .cardContactContent input {
+    height: 5vh;
+    font-size: 3vw;
+  }
+}

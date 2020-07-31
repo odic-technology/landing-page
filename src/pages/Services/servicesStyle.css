@@ -2,6 +2,10 @@
     height: 100vh;
 }
 
+.services .servicesContent{
+    display: flex;
+}
+
 .services .leftCol {
     display: flex;
     flex-direction: column;
@@ -9,6 +13,7 @@
     align-items: flex-start;
     height: 100vh;
     padding-left: 8vw;
+    width: 45vw;
 }
 
 .services .leftCol text {
@@ -36,7 +41,7 @@
     transform: scale(0.95);
 }
 
-.services .leftCol div {
+.services .leftCol div div {
     height: 2px;
 }
 
@@ -48,6 +53,7 @@
 
 .services .rightCol {
     height: 100vh;
+    width: 55vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -72,7 +78,7 @@
     transition: visibility 0.3s, opacity 0.3s;
     transition-delay: 0.2s;
     opacity: 1;
-    width: 100%;
+    width: 55vw;
     padding-right: 8vw;
     position: absolute;
     padding-top: 8vh;
@@ -119,4 +125,96 @@
 .services .rightCol button img {
     width: 1vw;
     margin-left: 1vw;
+}
+
+@media (max-width: 600px) {
+    .services .header .menuButton {
+        background-color: #09292F;
+    }
+    
+    .services .servicesContent {
+        flex-direction: column;
+    }
+
+    .services .leftCol text {
+        display: none;
+    }
+
+    .services .leftCol {
+        height: 20vh;
+        flex-direction: row;
+        width: 100vw;
+        padding: 0px;
+        padding-top: 12vh;
+        background-color: #09292F;
+    }
+
+    .services .leftCol .itens {
+        overflow-x: auto;
+        display: flex;
+    }
+
+    .services .leftCol .itens::-webkit-scrollbar {
+        display: none;
+    }
+
+    .services .leftCol .buttonBorder {
+        height: 1px;
+    }
+
+    .services .leftCol button {
+        font-size: 3.5vw;
+        white-space: nowrap;
+        margin-left: 1vw;
+    }
+
+    .services .leftCol button:first-child {
+        margin-left: 5vw;
+    }
+
+    .services .rightCol {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100vw;
+        height: 80vh;
+        padding-top: 2vh;
+    }
+
+    .services .rightCol text {
+        font-size: 3.8vw;
+    }
+
+    .services .rightCol div {
+        width: 100vw;
+        padding: 7vh 7vw 0vh 7vw;
+        max-height: 77vh;
+        overflow: auto;
+    }
+
+    .services .rightCol .aboutFirstText {
+        text-indent: 0px;
+    }
+
+    .services .rightCol text:not(:first-child) {
+        padding-top: 5vh;
+    }
+
+    .services .rightCol .divButton {
+        width: 60vw;
+        height: 5vh;
+        right: 20vw;
+        border-radius: 3.5vw;
+    }
+
+    .services .rightCol .divButton button {
+        font-size: 4vw;
+        border-radius: 3.5vw;
+    }
+
+    .services .rightCol button img {
+        width: 4vw;
+        margin-left: 5vw;
+    }
 }

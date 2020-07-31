@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import OdicHeader from '../../components/Header/OdicHeader'
-import { Row, Col } from 'antd'
 import './servicesStyle.css'
+import OdicLogo from '../../components/OdicLogo/OdicLogo'
 
 import RightArrow from '../../assets/rightArrow.svg'
 import { Link } from 'react-router-dom'
@@ -11,28 +11,30 @@ export default function About () {
 
   return (
     <div className='services'>
+      <OdicLogo hideInDesktop text='Serviços' />
       <OdicHeader />
-      <Row>
-        <Col span={11} className='leftCol'>
+      <div className='servicesContent'>
+        <div className='leftCol'>
           <text>Serviços</text>
+          <div className='itens'>
+            <button onClick={() => setTextSelecioned(1)}>
+                Aplicativos Mobile
+              <div className={textSelecioned === 1 ? 'buttonBorder' : ''} />
+            </button>
 
-          <button onClick={() => setTextSelecioned(1)}>
-              Aplicativos Mobile
-            <div className={textSelecioned === 1 ? 'buttonBorder' : ''} />
-          </button>
+            <button onClick={() => setTextSelecioned(2)}>
+                Desenvolvimento Web
+              <div className={textSelecioned === 2 ? 'buttonBorder' : ''} />
+            </button>
 
-          <button onClick={() => setTextSelecioned(2)}>
-              Desenvolvimento Web
-            <div className={textSelecioned === 2 ? 'buttonBorder' : ''} />
-          </button>
+            <button onClick={() => setTextSelecioned(3)}>
+                Criação de Design
+              <div className={textSelecioned === 3 ? 'buttonBorder' : ''} />
+            </button>
+          </div>
 
-          <button onClick={() => setTextSelecioned(3)}>
-              Criação de Design
-            <div className={textSelecioned === 3 ? 'buttonBorder' : ''} />
-          </button>
-
-        </Col>
-        <Col span={13} className='rightCol'>
+        </div>
+        <div className='rightCol'>
           <div className={textSelecioned !== 1 ? 'hide' : ''}>
             <text className='aboutFirstText'>Nós criamos aplicativos mobile com foco em funcionalidade, estética e interatividade. Utilizamos as tecnologias mais modernas que proporcionam a melhor experiência ao usuário/cliente final!</text>
           </div>
@@ -50,8 +52,8 @@ export default function About () {
               </button>
             </div>
           </Link>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </div>
   )
 }

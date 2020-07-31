@@ -7,7 +7,7 @@ import './contactRightColStyle.css'
 
 export default function ContactRightColumn ({ setTypeSelected, typeSelected, isFirstSelected, isSecondSelected, isThirdSelected, selectItem, quantitySelected, setFormAvailable }) {
   return (
-    <>
+    <div className='contactRightCol'>
       <div className='divText'>
         <text>Gostaria de criar algo conosco?</text>
         <text><text>É muito simples</text>, basta selecionar as</text>
@@ -63,6 +63,6 @@ export default function ContactRightColumn ({ setTypeSelected, typeSelected, isF
           <button onClick={() => setFormAvailable(2)}><img alt='' />Solicitar contato<img src={RightArrow} alt='' /></button>
         </div>
       </div>
-    </>
+    </div>
   )
 }

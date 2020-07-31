@@ -113,6 +113,18 @@
         margin-top: 2.5vh;
     }
 
+    .headerBackground {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 10;
+        transition: opacity 0s, visibility 0s;
+        transition-timing-function: ease-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
     #menu {
         position: absolute;
         right: 0px;
@@ -124,12 +136,19 @@
         width: 100vw;
         justify-content: center;
         align-items: center;
-        transition: opacity 0.3s, visibility 0.3s;
+        transition: opacity 0.2s, visibility 0.2s;
         transition-timing-function: ease-out;
         opacity: 0;
         visibility: hidden;
         margin: 0px;
         margin-top: -20px;
+    }
+
+    .openBackground {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transition: opacity 0.2s, visibility 0.2s;
+        transition-delay: 0.1s;
     }
 
     .open {

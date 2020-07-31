@@ -2,6 +2,10 @@
   height: 100vh;
 }
 
+.contact .contactContent {
+  display: flex;
+}
+
 .contact .leftCol {
   display: flex;
   flex-direction: column;
@@ -9,6 +13,7 @@
   align-items: flex-start;
   height: 100vh;
   padding-left: 5vw;
+  width: 58vw;
 }
 
 .contact .title {
@@ -68,4 +73,48 @@
   font-weight: 600;
   margin-right: 0.7vw;
   font-size: 1.4vw;
+}
+
+.contact .rightCol {
+  width: 42vw;
+}
+
+.contact .contactFooter {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .contact .leftCol {
+    display: none;
+  }
+
+  .contact .rightCol {
+    width: 100vw;
+    margin-top: 15vh;
+  }
+
+  .contact .contactFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .contact .contactFooter text {
+    font-family: Montserrat;
+    color: white;
+    font-size: 3.5vw;
+  }
+
+  .contact .contactFooter div {
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+    margin-top: 2vh;
+  }
+
+  .contact .contactFooter div img {
+    width: 4vw;
+  }
 }

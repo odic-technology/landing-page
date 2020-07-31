@@ -12,35 +12,40 @@ export default function Navbar () {
   useEffect(() => {
     if (window.location.href.includes('about')) {
       setPageSelected('about')
-    } else if (window.location.href.includes('portfolio')) {
+    } else if (window.location.href.includes('portfolio') || window.location.href.includes('web') || window.location.href.includes('mobile') || window.location.href.includes('design')) {
       setPageSelected('portfolio')
     } else if (window.location.href.includes('services')) {
       setPageSelected('services')
-    } else {
+    } else if (!window.location.href.includes('contact')) {
       setPageSelected('home')
+    } else {
+      setPageSelected('')
     }
   })
 
   return (
-    <div className='header'>
-      <div className={isOpen ? 'open' : ''} id='menu'>
-        <div className='closeMenuIcon'>
-          <img alt='' src={CloseMenuIcon} onClick={() => setIsOpen(false)} />
+    <>
+      <div className={isOpen ? 'openBackground headerBackground' : 'headerBackground'} />
+      <div className='header'>
+        <div className={isOpen ? 'open' : ''} id='menu'>
+          <div className='closeMenuIcon'>
+            <img alt='' src={CloseMenuIcon} onClick={() => setIsOpen(false)} />
+          </div>
+          <Link to='/' className={pageSelected === 'home' ? 'showMenuBorder' : ''}><p className='basic'>Início</p></Link>
+          <Link to='/about' className={pageSelected === 'about' ? 'showMenuBorder' : ''}><p className='basic'>Sobre</p></Link>
+          <Link to='/portfolio' className={pageSelected === 'portfolio' ? 'showMenuBorder' : ''}><p className='basic'>Portifólio</p></Link>
+          <Link to='/services' className={pageSelected === 'services' ? 'showMenuBorder' : ''}><p className='basic'>Serviços</p></Link>
+          <Link to='/contact'>
+            <button className='menuButtonContact'>
+              <text>Contato</text>
+            </button>
+          </Link>
         </div>
-        <Link to='/' className={pageSelected === 'home' ? 'showMenuBorder' : ''}><p className='basic'>Início</p></Link>
-        <Link to='/about' className={pageSelected === 'about' ? 'showMenuBorder' : ''}><p className='basic'>Sobre</p></Link>
-        <Link to='/portfolio' className={pageSelected === 'portfolio' ? 'showMenuBorder' : ''}><p className='basic'>Portifólio</p></Link>
-        <Link to='/services' className={pageSelected === 'services' ? 'showMenuBorder' : ''}><p className='basic'>Serviços</p></Link>
-        <Link to='/contact'>
-          <button className='menuButtonContact'>
-            <text>Contato</text>
-          </button>
-        </Link>
+        <div onClick={() => setIsOpen(!isOpen)} className='menuButton basic'>
+          <img src={MenuIcon} alt='icon' />
+          <text className='menuText'>Menu</text>
+        </div>
       </div>
-      <div onClick={() => setIsOpen(!isOpen)} className='menuButton basic'>
-        <img src={MenuIcon} alt='icon' />
-        <text className='menuText'>Menu</text>
-      </div>
-    </div>
+    </>
   )
 }
