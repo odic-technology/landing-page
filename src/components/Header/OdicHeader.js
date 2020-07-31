@@ -25,7 +25,7 @@ export default function Navbar () {
 
   return (
     <>
-      <div className={isOpen ? 'openBackground headerBackground' : 'headerBackground'} />
+      <div className={isOpen ? 'openBackground headerBackground' : 'headerBackground'} onClick={() => setIsOpen(false)} />
       <div className='header'>
         <div className={isOpen ? 'open' : ''} id='menu'>
           <div className='closeMenuIcon'>

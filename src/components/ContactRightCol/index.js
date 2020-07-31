@@ -6,13 +6,28 @@ import RightArrow from '../../assets/rightArrow.svg'
 import './contactRightColStyle.css'
 
 export default function ContactRightColumn ({ setTypeSelected, typeSelected, isFirstSelected, isSecondSelected, isThirdSelected, selectItem, quantitySelected, setFormAvailable }) {
+  function renderText () {
+    if (window.innerWidth > 600) {
+      return (
+        <div className='divText'>
+          <text>Gostaria de criar algo conosco?</text>
+          <text><text>É muito simples</text>, basta selecionar as</text>
+          <text>opções abaixo:</text>
+        </div>
+      )
+    } else {
+      return (
+        <div className='divText'>
+          <text>Gostaria de criar algo conosco? É muito simples!</text>
+          <text><text>basta selecionar as opções abaixo:</text></text>
+        </div>
+      )
+    }
+  }
+
   return (
     <div className='contactRightCol'>
-      <div className='divText'>
-        <text>Gostaria de criar algo conosco?</text>
-        <text><text>É muito simples</text>, basta selecionar as</text>
-        <text>opções abaixo:</text>
-      </div>
+      {renderText()}
       <div className='cardContact'>
         <div className='cardContactHeader'>
           <div className='cardContactType'>
