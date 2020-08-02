@@ -46,5 +46,6 @@
     .portifolioMobile .divCardMobile .mobileImages img {
         width: 70vw;
         margin-left: 6vw;
+        max-height: 55vh;
     }
 }

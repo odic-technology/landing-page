@@ -63,6 +63,7 @@
 
   .contactForm .cardContact .cardContactContent input {
     height: 5vh;
+    min-height: 30px;
     font-size: 3vw;
   }
 }

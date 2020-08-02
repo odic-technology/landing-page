@@ -32,7 +32,13 @@ export default function Portfolio () {
         <Row className='cards'>
           <Col className='cardRow'>
             <Link to='/mobile'>
-              <div className='cardMobile' onMouseEnter={() => setHoverMobile(true)} onMouseLeave={() => setHoverMobile(false)}>
+              <div
+                className={hoverMobile ? 'cardMobile cardMobileBackground' : 'cardMobile'}
+                onTouchStart={() => setHoverMobile(true)}
+                onTouchEnd={() => setHoverMobile(false)}
+                onMouseEnter={() => setHoverMobile(true)}
+                onMouseLeave={() => setHoverMobile(false)}
+              >
                 <text className={hoverMobile ? 'textHover' : ''}>Aplicativos Mobile</text>
                 {hoverMobile ? <img src={MobileWhite} alt='mobile' /> : <img src={Mobile} alt='mobile' />}
               </div>
@@ -40,7 +46,13 @@ export default function Portfolio () {
           </Col>
           <Col className='cardRow'>
             <Link to='/web'>
-              <div className='cardWeb' onMouseEnter={() => setHoverWeb(true)} onMouseLeave={() => setHoverWeb(false)}>
+              <div
+                className={hoverWeb ? 'cardWeb cardWebBackground' : 'cardWeb'}
+                onTouchStart={() => setHoverWeb(true)}
+                onTouchEnd={() => setHoverWeb(false)}
+                onMouseEnter={() => setHoverWeb(true)}
+                onMouseLeave={() => setHoverWeb(false)}
+              >
                 <text className={hoverWeb ? 'textHover' : ''}>Páginas Web</text>
                 {hoverWeb ? <img src={WebWhite} alt='web' /> : <img src={Web} alt='web' />}
               </div>
@@ -48,7 +60,13 @@ export default function Portfolio () {
           </Col>
           <Col className='cardRow'>
             <Link to='/design'>
-              <div className='cardDesign' onMouseEnter={() => setHoverDesign(true)} onMouseLeave={() => setHoverDesign(false)}>
+              <div
+                className={hoverDesign ? 'cardDesign cardDesignBackground' : 'cardDesign'}
+                onTouchStart={() => setHoverDesign(true)}
+                onTouchEnd={() => setHoverDesign(false)}
+                onMouseEnter={() => setHoverDesign(true)}
+                onMouseLeave={() => setHoverDesign(false)}
+              >
                 <text className={hoverDesign ? 'textHover' : ''}>Design de Interfaces</text>
                 {hoverDesign ? <img src={DesignWhite} alt='design' /> : <img src={Design} alt='design' />}
               </div>

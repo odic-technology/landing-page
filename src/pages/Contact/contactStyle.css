@@ -1,5 +1,6 @@
 .contact {
   height: 100vh;
+  min-height: 500px;
 }
 
 .contact .contactContent {
@@ -98,7 +99,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 9vh;
   }
 
   .contact .contactFooter text {

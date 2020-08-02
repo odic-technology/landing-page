@@ -226,6 +226,7 @@
 
   .contact .rightCol .cardContact .cardContactContent {
     height: 29vh;
+    min-height: 190px;
   }
 
   .contact .rightCol .cardContact .cardContactHeader {
