@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Row, Col } from 'antd'
 import { Link } from 'react-router-dom'
 
 import OdicLogo from '../../components/OdicLogo/OdicLogo'
@@ -22,15 +21,15 @@ export default function Portfolio () {
     <div className='portifolio'>
       <OdicLogo hideInDesktop text='Portifólio' />
       <OdicHeader />
-      <Row>
+      <div>
         <text className='title'>Portifólio</text>
-      </Row>
-      <Row>
-        <Row>
+      </div>
+      <div>
+        <div>
           <text className='subTitle'>Navegue pelas categorias:</text>
-        </Row>
-        <Row className='cards'>
-          <Col className='cardRow'>
+        </div>
+        <div className='cards'>
+          <div className='cardRow'>
             <Link to='/mobile'>
               <div
                 className={hoverMobile ? 'cardMobile cardMobileBackground' : 'cardMobile'}
@@ -43,8 +42,8 @@ export default function Portfolio () {
                 {hoverMobile ? <img src={MobileWhite} alt='mobile' /> : <img src={Mobile} alt='mobile' />}
               </div>
             </Link>
-          </Col>
-          <Col className='cardRow'>
+          </div>
+          <div className='cardRow'>
             <Link to='/web'>
               <div
                 className={hoverWeb ? 'cardWeb cardWebBackground' : 'cardWeb'}
@@ -57,8 +56,8 @@ export default function Portfolio () {
                 {hoverWeb ? <img src={WebWhite} alt='web' /> : <img src={Web} alt='web' />}
               </div>
             </Link>
-          </Col>
-          <Col className='cardRow'>
+          </div>
+          <div className='cardRow'>
             <Link to='/design'>
               <div
                 className={hoverDesign ? 'cardDesign cardDesignBackground' : 'cardDesign'}
@@ -71,9 +70,9 @@ export default function Portfolio () {
                 {hoverDesign ? <img src={DesignWhite} alt='design' /> : <img src={Design} alt='design' />}
               </div>
             </Link>
-          </Col>
-        </Row>
-      </Row>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

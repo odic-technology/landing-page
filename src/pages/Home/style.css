@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .home {
     display: flex;
 }
@@ -25,17 +29,26 @@
     height: 90vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-left: 8vw;
     padding-right: 8vw;
     margin-top: 10vh;
 }
 
+.homeDiv div {
+    display: flex;
+    flex-direction: column;
+}
+
 .homeTitle {
     font-family: Prata;
     font-size: 2.4vw;
+    font-weight: 500;
+    line-height: 4vh;
     color: white;
     margin: 0;
     margin-bottom: 2vh;
+    text-align: start;
 }
 
 .homeLine {
@@ -51,6 +64,7 @@
     font-size: 1.4vw;
     color: white;
     margin: 0;
+    text-align: start;
 }
 
 @media (max-width: 600px) {
@@ -64,12 +78,13 @@
     }
 
     .homeDiv {
-        height: 17vh;
+        height: 20vh;
         margin-top: 22vh;
         margin-bottom: 1vh;
     }
 
     .homeTitle {
+        width: 80vw;
         font-size: 5vw;
     }
 
