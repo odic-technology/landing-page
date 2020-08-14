@@ -1,14 +1,15 @@
-import OdicHeader from '../../components/Header/OdicHeader'
-
 import React from 'react'
-import Banner from '../../assets/banner.png'
+
 import './style.css'
+
+import OdicHeader from '../../components/Header/OdicHeader'
+import Banner from '../../assets/banner.png'
 import OdicLogo from '../../components/OdicLogo/OdicLogo'
 
 function App () {
   return (
     <>
-      <OdicHeader />
+      <OdicHeader isHalfHeader />
       <div class='home'>
         <div className='divHomeBanner'>
           <img src={Banner} className='homeBanner' alt='banner' />

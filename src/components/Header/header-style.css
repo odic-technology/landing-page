@@ -1,12 +1,19 @@
 .header {
     display: flex;
     flex-direction: row;
-    height: 45px;
-    margin-top: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 12vh;
     position: absolute;
     right: 0px;
     top: 0px;
+    width: 100vw;
     z-index: 11;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.halfHeader {
+    width: 55vw;
 }
 
 #menu {
@@ -27,6 +34,7 @@
 
 #menu a p {
     margin: 0px;
+    padding-bottom: 3px;
 }
 
 #menu .closeMenuIcon {
@@ -56,15 +64,22 @@
 
 .menuButton {
     border: none !important;
-    height: 45px;
+    height: 12vh;
     width: 7vw;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9;
     cursor: pointer;
-    background-color: #304448;
     border: 0 !important;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .menuButton img{
@@ -95,6 +110,7 @@
     margin-left: 10px;
     margin-right: 10px;
     outline: none !important;
+    cursor: pointer;
 }
 
 .menuButtonContact text {
@@ -106,6 +122,12 @@
 
 .header .showMenuBorder {
     border-bottom: 1px solid white;
+}
+
+.header .headerOdicLogo {
+    position: absolute;
+    left: 3vw;
+    width: 8vw;
 }
 
 @media (max-width: 600px) {
