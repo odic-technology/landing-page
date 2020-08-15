@@ -1,3 +1,7 @@
+.contactSuccess {
+    width: 30vw;
+}
+
 .contactSuccess .cardContact .cardContactHeader {
     display: flex;
     flex-direction: column;

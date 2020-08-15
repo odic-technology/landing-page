@@ -11,9 +11,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    height: 88vh;
     padding-left: 8vw;
     width: 45vw;
+    margin-top: 12vh;
 }
 
 .about .leftCol text {
@@ -34,6 +35,7 @@
     margin-bottom: 1vh;
     font-size: 2.5vw;
     outline: none;
+    cursor: pointer;
 }
 
 .about .leftCol button:active {

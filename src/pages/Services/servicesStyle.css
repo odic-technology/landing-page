@@ -34,6 +34,7 @@
     margin-bottom: 1vh;
     font-size: 2.5vw;
     outline: none;
+    cursor: pointer;
 }
 
 .services .leftCol button:active {
@@ -78,7 +79,6 @@
     transition: visibility 0.3s, opacity 0.3s;
     transition-delay: 0.2s;
     opacity: 1;
-    width: 55vw;
     padding-right: 8vw;
     position: absolute;
     padding-top: 8vh;
@@ -120,6 +120,7 @@
     justify-content: center;
     align-items: center;
     color: black;
+    cursor: pointer;
 }
 
 .services .rightCol button img {

@@ -72,8 +72,8 @@ export default function ContactRightColumn ({ setTypeSelected, typeSelected, isF
           </div>
         </div>
       </div>
-      <div className='bottomRightColumn'>
-        <text className={quantitySelected === 0 ? 'hideText' : ''}>{quantitySelected} de 3 selecionado(s)</text>
+      <div className={quantitySelected === 0 ? 'hideBottomCollumn bottomRightColumn' : 'bottomRightColumn'}>
+        <text>{quantitySelected} de 3 selecionado(s)</text>
         <div>
           <button onClick={() => setFormAvailable(2)}><img alt='' />Solicitar contato<img src={RightArrow} alt='' /></button>
         </div>

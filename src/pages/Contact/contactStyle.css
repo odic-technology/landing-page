@@ -12,8 +12,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  height: 100vh;
+  height: 88vh;
   padding-left: 5vw;
+  margin-top: 12vh;
   width: 58vw;
 }
 
@@ -27,7 +28,7 @@
 .contact .divSubTitle {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30vh;
+  margin-bottom: 25vh;
 }
 
 .contact .divSubTitle text {

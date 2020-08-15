@@ -58,7 +58,7 @@
 
 .basic {
     color: white;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-family: Montserrat;
 }
 
@@ -101,9 +101,9 @@ a:link {
 .menuButtonContact {
     background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
     border: 0px;
-    border-radius: 6px !important;
-    width: 100px;
-    height: 40px;
+    border-radius: 0.3vw !important;
+    width: 7vw;
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +117,7 @@ a:link {
     color: white;
     font-family: Montserrat;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 1vw;
 }
 
 .header .showMenuBorder {
