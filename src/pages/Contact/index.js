@@ -41,7 +41,7 @@ export default function Contact () {
       <OdicHeader />
       <Row>
         <Col span={14} className='leftCol'>
-          <text className='title'>Contato</text>
+          <text className='title'>Teste do Guide</text>
           <div className='divSubTitle'>
             <text>Olá!</text>
             <text>Esperamos que tenha gostado</text>
