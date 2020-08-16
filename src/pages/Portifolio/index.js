@@ -3,19 +3,17 @@ import { Link } from 'react-router-dom'
 
 import OdicLogo from '../../components/OdicLogo/OdicLogo'
 import OdicHeader from '../../components/Header/OdicHeader'
-import Mobile from '../../assets/mobileIcon.svg'
-import MobileWhite from '../../assets/mobileIconWhite.svg'
-import Web from '../../assets/webIcon.svg'
-import WebWhite from '../../assets/webIconWhite.svg'
-import Design from '../../assets/designIcon.svg'
-import DesignWhite from '../../assets/designIconWhite.svg'
+import MatchfyLogo from '../../assets/matchfyLogo.svg'
+import MatchfyLogoWhite from '../../assets/matchfyLogoWhite.svg'
+import MuseuLogo from '../../assets/museuLogo.svg'
+import TurboMaquinasLogo from '../../assets/turboMaquinasLogo.svg'
 
 import './portifolioStyle.css'
 
 export default function Portfolio () {
-  const [hoverMobile, setHoverMobile] = useState(false)
-  const [hoverWeb, setHoverWeb] = useState(false)
-  const [hoverDesign, setHoverDesign] = useState(false)
+  const [hoverCard1, setHoverCard1] = useState(false)
+  const [hoverCard2, setHoverCard2] = useState(false)
+  const [hoverCard3, setHoverCard3] = useState(false)
 
   return (
     <div className='portifolio'>
@@ -25,49 +23,50 @@ export default function Portfolio () {
         <text className='title'>Portifólio</text>
       </div>
       <div>
-        <div>
-          <text className='subTitle'>Navegue pelas categorias:</text>
-        </div>
         <div className='cards'>
           <div className='cardRow'>
             <Link to='/mobile'>
               <div
-                className={hoverMobile ? 'cardMobile cardMobileBackground' : 'cardMobile'}
-                onTouchStart={() => setHoverMobile(true)}
-                onTouchEnd={() => setHoverMobile(false)}
-                onMouseEnter={() => setHoverMobile(true)}
-                onMouseLeave={() => setHoverMobile(false)}
+                className={hoverCard1 ? 'card1 card1Background' : 'card1'}
+                onTouchStart={() => setHoverCard1(true)}
+                onTouchEnd={() => setHoverCard1(false)}
+                onMouseEnter={() => setHoverCard1(true)}
+                onMouseLeave={() => setHoverCard1(false)}
               >
-                <text className={hoverMobile ? 'textHover' : ''}>Aplicativos Mobile</text>
-                {hoverMobile ? <img src={MobileWhite} alt='mobile' /> : <img src={Mobile} alt='mobile' />}
+                {hoverCard1 ? <img src={MatchfyLogoWhite} alt='Matchfy' /> : <img src={MatchfyLogo} alt='Matchfy' />}
+                <div className='separator' />
+                <text className={hoverCard1 ? 'textHover' : ''}>Aplicativo mobile focado em relacionamentos entre universitários!</text>
               </div>
             </Link>
           </div>
           <div className='cardRow'>
             <Link to='/web'>
               <div
-                className={hoverWeb ? 'cardWeb cardWebBackground' : 'cardWeb'}
-                onTouchStart={() => setHoverWeb(true)}
-                onTouchEnd={() => setHoverWeb(false)}
-                onMouseEnter={() => setHoverWeb(true)}
-                onMouseLeave={() => setHoverWeb(false)}
+                className={hoverCard2 ? 'card2 card2Background' : 'card2'}
+                onTouchStart={() => setHoverCard2(true)}
+                onTouchEnd={() => setHoverCard2(false)}
+                onMouseEnter={() => setHoverCard2(true)}
+                onMouseLeave={() => setHoverCard2(false)}
               >
-                <text className={hoverWeb ? 'textHover' : ''}>Páginas Web</text>
-                {hoverWeb ? <img src={WebWhite} alt='web' /> : <img src={Web} alt='web' />}
+                <img src={MuseuLogo} alt='Museu' />
+                <text className={hoverCard2 ? 'textHover card2Title' : 'card2Title'}>Grande Desafio 2020</text>
+                <div className='separator' />
+                <text className={hoverCard2 ? 'textHover' : ''}>Aplicativo de competição de incentivo à sustentabilidade</text>
               </div>
             </Link>
           </div>
           <div className='cardRow'>
             <Link to='/design'>
               <div
-                className={hoverDesign ? 'cardDesign cardDesignBackground' : 'cardDesign'}
-                onTouchStart={() => setHoverDesign(true)}
-                onTouchEnd={() => setHoverDesign(false)}
-                onMouseEnter={() => setHoverDesign(true)}
-                onMouseLeave={() => setHoverDesign(false)}
+                className={hoverCard3 ? 'card3 card3Background' : 'card3'}
+                onTouchStart={() => setHoverCard3(true)}
+                onTouchEnd={() => setHoverCard3(false)}
+                onMouseEnter={() => setHoverCard3(true)}
+                onMouseLeave={() => setHoverCard3(false)}
               >
-                <text className={hoverDesign ? 'textHover' : ''}>Design de Interfaces</text>
-                {hoverDesign ? <img src={DesignWhite} alt='design' /> : <img src={Design} alt='design' />}
+                <img src={TurboMaquinasLogo} alt='TurboMaquinas' />
+                <div className='separator' />
+                <text className={hoverCard3 ? 'textHover' : ''}>Modernização de folder empresarial</text>
               </div>
             </Link>
           </div>
