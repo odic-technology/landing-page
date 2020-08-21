@@ -1,53 +1,13 @@
-.portifolioDesign .divCard {
+.portifolioDesign .divImage {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-.portifolioDesign .divCard img {
-    width: 85vw;
-    margin-bottom: 5vh;     
 }
 
-.portifolioDesign .divCard .title {
-    font-family: Montserrat;
-    color: white;
-    font-size: 2.5vw;
-    width: 85vw;
-    margin-top: 13vh;
-    font-weight: 600;
-}
-
-.portifolioDesign .divCard .subTitle {
-    font-family: Montserrat;
-    color: white;
-    font-size: 1.5vw;
-    width: 85vw;
-    margin-bottom: 8vh;
-    font-weight: 300;
-}
-
-@media (max-width: 600px) {
-    .portifolioDesign .divCard {
-        overflow-y: auto;
-        max-height: 80.8vh;
-        justify-content: flex-start;
-    }
-
-    .portifolioDesign .divCard .title {
-        margin-top: 0px;
-        margin-left: 8vw;
-        font-size: 3.5vw;
-    }
-
-    .portifolioDesign .divCard img {
-        margin-bottom: 1vh;
-    }
-
-    .portifolioDesign .divCard .subTitle {
-        font-size: 3vw;
-        margin-bottom: 2vh;
-        margin-left: 8vw;
-    }
+.portifolioDesign .divImage img {
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }

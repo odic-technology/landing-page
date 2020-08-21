@@ -1,18 +1,13 @@
-.portifolioMobile .divCard {
+.portifolioMobile .divImage {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
 }
 
-.portifolioMobile .divCard img {
-  width: 85vw;
-  margin-bottom: 5vh;
-}
-
-@media (max-width: 600px) {
-  .portifolioMobile .divCard {
-    display: none;
-  }
+.portifolioMobile .divImage img {
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }

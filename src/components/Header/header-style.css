@@ -10,6 +10,7 @@
     width: 100vw;
     z-index: 11;
     background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .halfHeader {
@@ -128,6 +129,26 @@ a:link {
     position: absolute;
     left: 3vw;
     width: 8vw;
+}
+
+.headerLeftSide {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 3vw;
+}
+
+.headerLeftSide text {
+    font-family: Prata;
+    color: white;
+    font-size: 4vw;
+    margin-left: 1vw;
+}
+
+.headerLeftSide img {
+    width: 5vw;
+    cursor: pointer;
+    padding: 1vw;
 }
 
 @media (max-width: 600px) {

@@ -1,60 +1,13 @@
-.portifolioWeb {
-  height: 100vh;
-}
-
-.portifolioWeb .content {
+.portifolioWeb .divImage {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  height: 81vh;
 }
 
-.portifolioWeb .content .contentBackground {
-  width: 25vw;
-  background: linear-gradient(to right, #4B54CE, #00ECD0);
-  padding: 2px;
-  border-radius: 5px;
-}
-
-.portifolioWeb .content .contentBackground div {
-  background-color: #304448;
-  border-radius: 5px;
-  padding: 2vh;
-}
-
-.portifolioWeb .content text {
-  font-size: 1.3vw;
-  font-family: Montserrat;
-  color: white;
-  text-align: justify;
-  display: block;
-}
-
-.portifolioWeb .content img {
-  width: 35vw;
-}
-
-@media (max-width: 600px) {
-  .portifolioWeb .content {
-    height: 60vh;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .portifolioWeb .content .contentBackground {
-    width: 70vw;
-    margin-bottom: 5vh;
-  }
-
-  .portifolioWeb .content .contentBackground div {
-    padding: 1vh 2vh;
-  }
-
-  .portifolioWeb .content text {
-    font-size: 3vw;
-  }
-
-  .portifolioWeb .content img {
-    width: 70vw;
-  }
+.portifolioWeb .divImage img {
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }

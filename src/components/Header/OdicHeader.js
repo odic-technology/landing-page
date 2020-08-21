@@ -6,8 +6,9 @@ import './header-style.css'
 import MenuIcon from '../../assets/menuIcon.svg'
 import CloseMenuIcon from '../../assets/closeMenuIcon.svg'
 import OdicLogo from '../../assets/odicLogo.svg'
+import ArrowBack from '../../assets/back-arrow.svg'
 
-export default function Navbar ({ isHalfHeader }) {
+export default function Navbar ({ isHalfHeader, hasBackButton, title }) {
   const [isOpen, setIsOpen] = useState(false)
   const [pageSelected, setPageSelected] = useState('home')
 
@@ -25,11 +26,28 @@ export default function Navbar ({ isHalfHeader }) {
     }
   })
 
+  function renderHeaderLeftSide () {
+    if (hasBackButton) {
+      return (
+        <div className='headerLeftSide'>
+          <Link to='/portfolio'>
+            <img src={ArrowBack} alt='arrow' />
+          </Link>
+          <text>{title}</text>
+        </div>
+      )
+    } else {
+      return (
+        <img alt='' src={OdicLogo} className='headerOdicLogo' />
+      )
+    }
+  }
+
   return (
     <>
       <div className={isOpen ? 'openBackground headerBackground' : 'headerBackground'} onClick={() => setIsOpen(false)} />
       <div className={isHalfHeader ? 'halfHeader header' : 'header'}>
-        <img alt='' src={OdicLogo} className='headerOdicLogo' />
+        {renderHeaderLeftSide()}
         <div className={isOpen ? 'open' : ''} id='menu'>
           <div className='closeMenuIcon'>
             <img alt='' src={CloseMenuIcon} onClick={() => setIsOpen(false)} />
