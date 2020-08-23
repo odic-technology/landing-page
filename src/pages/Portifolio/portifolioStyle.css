@@ -1,7 +1,10 @@
 .portifolio {
-    height: 82vh;
-    padding-top: 18vh;
+    height: 100vh;
     margin: 0px 10vw;
+}
+
+.portifolio .divTitle {
+    padding-top: 18vh;
 }
 
 .portifolio .title {
@@ -64,14 +67,6 @@
     width: 8vw;
 }
 
-.portifolio .cards .cardRow img {
-    width: 8vw;
-}
-
-.portifolio .cards .cardRow img {
-    width: 8vw;
-}
-
 .portifolio .cards .cardRow .separator {
     background-color: #DDDDDD;
     height: 1px;
@@ -97,53 +92,44 @@
 }
 
 @media (max-width: 600px) {
+    .portifolio {
+        margin: 0px;
+    }
+
     .portifolio .title {
         display: none;
     }
 
     .portifolio .cards {
-        max-height: 78vh;
+        max-width: 100vw;
         overflow: auto;
-        margin-top: 2vh;
-        padding-bottom: 2vh;
-    }
-
-    .portifolio .cards .cardRow {
-        margin-top: 4vh;
-        margin-bottom: 1vh;
+        padding-left: 7vw;
     }
 
     .portifolio .cards div {
-        height: 27vh;
+        width: 60vw;
+        border-radius: 4vw;
     }
 
-    .portifolio .cards .card1 {
-        width: 18vh;
-    }
-
-    .portifolio .cards .card2 {
-        width: 27vh;
-    }
-
-    .portifolio .cards .card3 {
-        width: 27vh;
-        margin-left: 0px;
+    .portifolio .cards .cardRow {
+        margin-left: 7vw;
+        margin-right: 7vw;
     }
 
     .portifolio .cards text {
-        font-size: 1.9vh;
-        font-weight: 700;
+        padding: 0px 6vw;     
+        font-size: 1.5vh;   
     }
 
-    .portifolio .cards img {
-        width: 8vw;
+    .portifolio .cards .cardRow img {
+        width: 15vh;
+    }
+
+    .portifolio .cards .cardRow .card2 img {
+        width: 20vh;
     }
     
-    .portifolio .cards .card2 img {
-        width: 15vw;
-    }
-    
-    .portifolio .cards .card3 img {
-        width: 10vw;
+    .portifolio .cards .cardRow .card3 img {
+        width: 22vh;
     }
 }

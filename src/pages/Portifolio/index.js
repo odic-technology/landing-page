@@ -19,7 +19,7 @@ export default function Portfolio () {
     <div className='portifolio'>
       <OdicLogo hideInDesktop text='Portifólio' />
       <OdicHeader />
-      <div>
+      <div className='divTitle'>
         <text className='title'>Portifólio</text>
       </div>
       <div>

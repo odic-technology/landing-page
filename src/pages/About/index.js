@@ -42,15 +42,15 @@ export default function About () {
             <text className='aboutFirstText'>Desde então, a Odic vem assumindo protagonismo ao ajudar as pessoas a colocarem suas ideias em prática e assim, impactando ainda mais na vida de um público cada vez maior!</text>
           </div>
           <div className={textSelecioned !== 2 ? 'hide' : ''}>
-            <text>Posso lhe contar um segredo?</text>
+            <text className='textBold'>Posso lhe contar um segredo?</text>
             <text>Somos um time multidisciplinar, de jovens extremamente engajados e apaixonados pelo que fazemos. Isto, faz toda a diferença para que todos os projetos desenvolvidos por nós, passem necessariamente pelas soluções mais criativas e extraordinárias para acertarmos em cheio na melhor experiência para seu usuário/cliente final.</text>
           </div>
           <div className={textSelecioned !== 3 ? 'hide' : ''}>
-            <text>Você sempre por perto!</text>
+            <text className='textBold'>Você sempre por perto!</text>
             <text>Nós trabalhamos com Sprints curtos e frequentemente validamos todo o processo com você. Desta forma, garantimos que o produto seja entregue de acordo com as suas necessidades e de seus usuários/clientes de forma ágil, eficiente e transparente.</text>
           </div>
           <div className={textSelecioned !== 4 ? 'hide' : ''}>
-            <text>Trabalhamos com a imaginação!</text>
+            <text className='textBold'>Trabalhamos com a imaginação!</text>
             <text>Nosso foco sempre será: ajudar nossos clientes a desenvolverem, da maneira mais completa, as ideias mais profundas que tiveram para criar ou recriar soluções inovadoras que irão dar aquela alavancada em seus objetivos. Desta forma, além de lhe proporcionar uma experiência incrível, iremos tornar seu negócio mais atrativo e fazer com que mais e mais pessoas saibam quem você realmente é. </text>
             <text>Ainda não tem uma boa ideia para resolver um problema? sem problemas, nós também iremos te ajudar com isso!</text>
           </div>

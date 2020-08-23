@@ -154,6 +154,17 @@ a:link {
 @media (max-width: 600px) {
     .header {
         margin-top: 2.5vh;
+        background-color: transparent;
+        box-shadow: none;
+        height: 4vh;
+    }
+
+    .halfHeader {
+        width: 100vw;
+    }
+
+    .header .headerOdicLogo {
+        width: 23vw;
     }
 
     .headerBackground {

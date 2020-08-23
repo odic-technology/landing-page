@@ -211,7 +211,6 @@
 
 @media (max-width: 600px) {
   .contact .contactRightCol {
-    width: 100vw;
     padding: 0px 10vw;
   }
 
