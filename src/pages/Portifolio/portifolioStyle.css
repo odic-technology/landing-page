@@ -106,6 +106,10 @@
         padding-left: 7vw;
     }
 
+    .portifolio .cards::-webkit-scrollbar {
+        display: none;
+    }
+
     .portifolio .cards div {
         width: 60vw;
         border-radius: 4vw;
