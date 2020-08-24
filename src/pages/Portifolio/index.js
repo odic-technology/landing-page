@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import OdicLogo from '../../components/OdicLogo/OdicLogo'
 import OdicHeader from '../../components/Header/OdicHeader'
 import MatchfyLogo from '../../assets/matchfyLogo.svg'
 import MatchfyLogoWhite from '../../assets/matchfyLogoWhite.svg'
@@ -17,8 +16,7 @@ export default function Portfolio () {
 
   return (
     <div className='portifolio'>
-      <OdicLogo hideInDesktop text='Portifólio' />
-      <OdicHeader />
+      <OdicHeader pageSelected='Portifólio' />
       <div className='divTitle'>
         <text className='title'>Portifólio</text>
       </div>
@@ -70,6 +68,7 @@ export default function Portfolio () {
               </div>
             </Link>
           </div>
+          <div className='divMargin' />
         </div>
       </div>
     </div>

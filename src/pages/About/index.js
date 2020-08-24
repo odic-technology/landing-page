@@ -1,15 +1,13 @@
 import React, { useState } from 'react'
 import OdicHeader from '../../components/Header/OdicHeader'
 import './about-style.css'
-import OdicLogo from '../../components/OdicLogo/OdicLogo'
 
 export default function About () {
   const [textSelecioned, setTextSelecioned] = useState(1)
 
   return (
     <div className='about'>
-      <OdicLogo hideInDesktop text='Sobre' />
-      <OdicHeader />
+      <OdicHeader pageSelected='Sobre' />
       <div className='aboutContent'>
         <div className='leftCol'>
           <text>Sobre</text>

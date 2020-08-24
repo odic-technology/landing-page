@@ -91,6 +91,10 @@
     width: 12vw;
 }
 
+.portifolio .cards .divMargin {
+    display: none;
+}
+
 @media (max-width: 600px) {
     .portifolio {
         margin: 0px;
@@ -135,5 +139,11 @@
     
     .portifolio .cards .cardRow .card3 img {
         width: 22vh;
+    }
+
+    .portifolio .cards .divMargin {
+        display: block;
+        background-color: transparent;
+        box-shadow: none;
     }
 }

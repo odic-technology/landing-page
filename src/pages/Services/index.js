@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import OdicHeader from '../../components/Header/OdicHeader'
 import './servicesStyle.css'
-import OdicLogo from '../../components/OdicLogo/OdicLogo'
 
 import RightArrow from '../../assets/rightArrow.svg'
 import { Link } from 'react-router-dom'
@@ -11,8 +10,7 @@ export default function About () {
 
   return (
     <div className='services'>
-      <OdicLogo hideInDesktop text='Serviços' />
-      <OdicHeader />
+      <OdicHeader pageSelected='Serviços' />
       <div className='servicesContent'>
         <div className='leftCol'>
           <text>Serviços</text>

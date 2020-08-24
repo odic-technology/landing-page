@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import OdicHeader from '../../components/Header/OdicHeader'
-import OdicLogo from '../../components/OdicLogo/OdicLogo'
 import ContactRightColumn from '../../components/ContactRightCol'
 import ContactForm from '../../components/ContactForm'
 import ContactSuccess from '../../components/ContactSuccess'
@@ -40,7 +39,6 @@ export default function Contact () {
 
   return (
     <div className='contact'>
-      <OdicLogo hideInDesktop text='Contato' />
       <OdicHeader />
       <div className='contactContent'>
         <div className='leftCol'>

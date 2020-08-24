@@ -1,31 +1,28 @@
 .portifolioHeader {
   display: flex;
   align-items: center;
-  padding: 2vh 0px 5vh 2vw;
+  padding: 2vh 0px 2vh 2vw;
+  display: none;
 }
 
 .portifolioHeader text {
-  font-family: Prata;
+  font-family: Montserrat;
   color: white;
   font-size: 3.5vw;
-  margin-left: 1vw;
+  margin-left: 3vw;
+  font-weight: 900;
 }
 
 .portifolioHeader img {
-  width: 6vw;
+  width: 4vw;
   cursor: pointer;
-  padding: 1vw;
+  margin-left: 2vw;
 }
 
 @media (max-width: 600px) {
-  .portifolioHeader img {
-    display: none;
-  }
-
-  .portifolioHeader text {
-    margin-top: 9vh;
-    margin-left: 5vw;
-    font-size: 4.5vw;
-    font-family: Montserrat;
+  .portifolioHeader {
+    display: flex;
+    background-color: #09292F;
+    padding-top: 12vh;
   }
 }
