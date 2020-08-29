@@ -4,14 +4,20 @@ import OdicHeader from '../../../components/Header/OdicHeader'
 import PortifolioHeader from '../../../components/PortifolioHeader/PortifolioHeader'
 
 import Matchfy from '../../../assets/matchfyPortifolio.png'
-import MatchfyMobile from '../../../assets/matchfyPortifolioMobile.png'
+import MatchfyMobile1 from '../../../assets/matchfyPortifolioMobile1.png'
+import MatchfyMobile2 from '../../../assets/matchfyPortifolioMobile2.png'
 
 import './mobileStyle.css'
 
 export default function Mobile () {
   function renderImage () {
     if (window.innerWidth < 600) {
-      return <img src={MatchfyMobile} alt='Matchfy' />
+      return (
+        <>
+          <img src={MatchfyMobile1} alt='Matchfy' />
+          <img src={MatchfyMobile2} alt='Matchfy' />
+        </>
+      )
     } else {
       return <img src={Matchfy} alt='Matchfy' />
     }

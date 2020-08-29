@@ -36,6 +36,7 @@
     font-size: 2.5vw;
     outline: none;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .about .leftCol button:active {

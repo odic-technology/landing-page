@@ -108,6 +108,7 @@
         max-width: 100vw;
         overflow: auto;
         padding-left: 7vw;
+        padding-bottom: 15px;
     }
 
     .portifolio .cards::-webkit-scrollbar {

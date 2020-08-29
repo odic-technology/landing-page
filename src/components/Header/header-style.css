@@ -139,7 +139,7 @@ a:link {
 }
 
 .header .headerLogoLeftSide text {
-    font-size: 1.6vh;
+    font-size: 1.5vh;
     color: white;
     font-family: Prata;
     height: 2px;
@@ -150,7 +150,7 @@ a:link {
 
 .header .headerLogoLeftSide .separator {
     margin: 0px 2vw;
-    margin-bottom: 0.4vh;
+    font-size: 2vw;
 }
 
 .headerLeftSide {
@@ -163,12 +163,12 @@ a:link {
 .headerLeftSide text {
     font-family: Prata;
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     margin-left: 1vw;
 }
 
 .headerLeftSide img {
-    width: 5vw;
+    width: 4vw;
     cursor: pointer;
     padding: 1vw;
 }
@@ -237,6 +237,7 @@ a:link {
         width: 100vw;
         display: flex;
         justify-content: center;
+        -webkit-tap-highlight-color: transparent;
     }
 
     #menu a:active {
@@ -262,11 +263,13 @@ a:link {
     .menuButton {
         width: auto;
         margin-right: 8vw;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .menuButtonContact {
-        width: 55vw;
+        width: 50vw;
         height: 7vh;
+        border-radius: 2vw !important;
     }
 
     .menuButtonContact text {

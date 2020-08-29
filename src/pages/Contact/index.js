@@ -39,7 +39,7 @@ export default function Contact () {
 
   return (
     <div className='contact'>
-      <OdicHeader />
+      <OdicHeader pageSelected='Contato' />
       <div className='contactContent'>
         <div className='leftCol'>
           <text className='title'>Contato</text>
