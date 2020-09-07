@@ -148,6 +148,11 @@
   padding-bottom: 3vh;
 }
 
+.contact .rightCol .cardContact .cardContactContent .cardContactButton button {
+  font-weight: bold;
+  font-family: Montserrat;
+}
+
 .contact .rightCol .cardContact .cardContactContent .cardContactButton .typeChecked {
   background-color: #E4021D;
 }

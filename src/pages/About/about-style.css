@@ -96,6 +96,10 @@
     opacity: 0;
 }
 
+.about .rightCol .textBold {
+    font-weight: bold;
+}
+
 @media (max-width: 600px) {
     .about .header .menuButton {
         background-color: #09292F;
@@ -125,6 +129,8 @@
 
     .about .leftCol button {
         font-size: 3.5vw;
+        margin-left: 0.8vw;
+        margin-right: 0.8vw;
     }
 
     .about .rightCol {
@@ -155,10 +161,6 @@
 
     .about .rightCol .aboutFirstText {
         text-indent: 4vw;
-    }
-
-    .about .rightCol .textBold {
-        font-weight: bold;
     }
 
     .about .rightCol text:not(:first-child) {

@@ -32,6 +32,9 @@ export default function ContactForm ({ setFormAvailable, isFirstSelected, isSeco
 
     await postApi('/', information)
     setFormAvailable(3)
+    setTimeout(() => {
+      setFormAvailable(1)
+    }, 8000)
   }
 
   return (

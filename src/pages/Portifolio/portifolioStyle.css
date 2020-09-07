@@ -126,8 +126,8 @@
     }
 
     .portifolio .cards text {
-        padding: 0px 6vw;     
-        font-size: 1.5vh;   
+        padding: 0px 6vw;
+        font-size: 1.7vh;
     }
 
     .portifolio .cards .cardRow img {
@@ -146,5 +146,9 @@
         display: block;
         background-color: transparent;
         box-shadow: none;
+    }
+
+    .portifolio .cards .cardRow .card2Title {
+        font-size: 4.5vw;
     }
 }

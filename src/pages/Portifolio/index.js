@@ -16,9 +16,9 @@ export default function Portfolio () {
 
   return (
     <div className='portifolio'>
-      <OdicHeader pageSelected='Portifólio' />
+      <OdicHeader pageSelected='Portfólio' />
       <div className='divTitle'>
-        <text className='title'>Portifólio</text>
+        <text className='title'>Portfólio</text>
       </div>
       <div>
         <div className='cards'>

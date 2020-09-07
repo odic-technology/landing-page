@@ -23,16 +23,21 @@ export default function Contact () {
 
   function selectItem () {
     if (typeSelected === 1) {
-      if (!isFirstSelected) setQuantitySelected(quantitySelected + 1)
-      else setQuantitySelected(quantitySelected - 1)
+      if (!isFirstSelected) {
+        setTypeSelected(2)
+        setQuantitySelected(quantitySelected + 1)
+      } else setQuantitySelected(quantitySelected - 1)
       setIsFirstSelected(!isFirstSelected)
     } else if (typeSelected === 2) {
-      if (!isSecondSelected) setQuantitySelected(quantitySelected + 1)
-      else setQuantitySelected(quantitySelected - 1)
+      if (!isSecondSelected) {
+        setTypeSelected(3)
+        setQuantitySelected(quantitySelected + 1)
+      } else setQuantitySelected(quantitySelected - 1)
       setIsSecondSelected(!isSecondSelected)
     } else if (typeSelected === 3) {
-      if (!isThirdSelected) setQuantitySelected(quantitySelected + 1)
-      else setQuantitySelected(quantitySelected - 1)
+      if (!isThirdSelected) {
+        setQuantitySelected(quantitySelected + 1)
+      } else setQuantitySelected(quantitySelected - 1)
       setIsThirdSelected(!isThirdSelected)
     }
   }
@@ -63,7 +68,7 @@ export default function Contact () {
             <ContactForm setFormAvailable={setFormAvailable} isFirstSelected={isFirstSelected} isSecondSelected={isSecondSelected} isThirdSelected={isThirdSelected} />
           </div>
           <div className={formAvailable !== 3 ? 'hide' : ''}>
-            <ContactSuccess />
+            <ContactSuccess setFormAvailable={setFormAvailable} />
           </div>
         </div>
       </div>

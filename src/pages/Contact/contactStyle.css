@@ -106,7 +106,7 @@
   .contact .contactFooter text {
     font-family: Montserrat;
     color: white;
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   .contact .contactFooter div {
@@ -117,6 +117,6 @@
   }
 
   .contact .contactFooter div img {
-    width: 4vw;
+    width: 5vw;
   }
 }

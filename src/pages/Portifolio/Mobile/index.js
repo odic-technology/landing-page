@@ -25,7 +25,7 @@ export default function Mobile () {
 
   return (
     <div className='portifolioMobile'>
-      <OdicHeader hasBackButton title='Matchfy' pageSelected='Portifólio' />
+      <OdicHeader hasBackButton title='Matchfy' pageSelected='Portfólio' />
       <PortifolioHeader title='Matchfy' />
       <div className='divImage'>
         {renderImage()}

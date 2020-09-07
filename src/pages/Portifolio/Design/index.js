@@ -19,7 +19,7 @@ export default function Design () {
 
   return (
     <div className='portifolioDesign'>
-      <OdicHeader hasBackButton title='Turbo Máquinas' pageSelected='Portifólio' />
+      <OdicHeader hasBackButton title='Turbo Máquinas' pageSelected='Portfólio' />
       <PortifolioHeader title='Turbo Máquinas' />
       <div className='divImage'>
         {renderImage()}

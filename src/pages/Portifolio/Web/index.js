@@ -25,7 +25,7 @@ export default function Web () {
 
   return (
     <div className='portifolioWeb'>
-      <OdicHeader hasBackButton title='Grande Desafio 2020' pageSelected='Portifólio' />
+      <OdicHeader hasBackButton title='Grande Desafio 2020' pageSelected='Portfólio' />
       <PortifolioHeader title='Grande Desafio 2020' />
       <div className='divImage'>
         {renderImage()}

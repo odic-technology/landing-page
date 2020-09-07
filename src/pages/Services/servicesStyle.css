@@ -206,12 +206,12 @@
         width: 60vw;
         height: 5vh;
         right: 20vw;
-        border-radius: 3.5vw;
+        border-radius: 2.5vw;
     }
 
     .services .rightCol .divButton button {
         font-size: 4vw;
-        border-radius: 3.5vw;
+        border-radius: 2.5vw;
     }
 
     .services .rightCol button img {

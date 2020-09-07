@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import './header-style.css'
@@ -10,6 +10,20 @@ import ArrowBack from '../../assets/back-arrow.svg'
 
 export default function Navbar ({ isHalfHeader, hasBackButton, title, pageSelected }) {
   const [isOpen, setIsOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScroll, setlastScroll] = useState(0)
+
+  useEffect(() => {
+    window.addEventListener('scroll', (event) => {
+      var scroll = window.scrollY
+      if (lastScroll < scroll) {
+        setIsVisible(false)
+      } else {
+        setIsVisible(true)
+      }
+      setlastScroll(scroll)
+    })
+  })
 
   function renderHeaderLeftSide () {
     if (hasBackButton && window.innerWidth > 600) {
@@ -35,7 +49,7 @@ export default function Navbar ({ isHalfHeader, hasBackButton, title, pageSelect
   return (
     <>
       <div className={isOpen ? 'openBackground headerBackground' : 'headerBackground'} onClick={() => setIsOpen(false)} />
-      <div className={isHalfHeader ? 'halfHeader header' : 'header'}>
+      <div className={isVisible ? isHalfHeader ? 'halfHeader header' : 'header' : 'hideHeader header'}>
         {renderHeaderLeftSide()}
         <div className={isOpen ? 'open' : ''} id='menu'>
           <div className='closeMenuIcon'>
@@ -43,7 +57,7 @@ export default function Navbar ({ isHalfHeader, hasBackButton, title, pageSelect
           </div>
           <Link to='/'><p className={pageSelected === 'Início' ? 'showMenuBorder basic' : 'basic'}>Início</p></Link>
           <Link to='/about'><p className={pageSelected === 'Sobre' ? 'showMenuBorder basic' : 'basic'}>Sobre</p></Link>
-          <Link to='/portfolio'><p className={pageSelected === 'Portifólio' ? 'showMenuBorder basic' : 'basic'}>Portifólio</p></Link>
+          <Link to='/portfolio'><p className={pageSelected === 'Portfólio' ? 'showMenuBorder basic' : 'basic'}>Portfólio</p></Link>
           <Link to='/services'><p className={pageSelected === 'Serviços' ? 'showMenuBorder basic' : 'basic'}>Serviços</p></Link>
           <Link to='/contact'>
             <button className='menuButtonContact'>

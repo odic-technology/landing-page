@@ -8,6 +8,10 @@ import { Link } from 'react-router-dom'
 export default function About () {
   const [textSelecioned, setTextSelecioned] = useState(1)
 
+  function setScrollLeft (value) {
+    document.getElementsByClassName('itens')[0].scrollLeft = value
+  }
+
   return (
     <div className='services'>
       <OdicHeader pageSelected='Serviços' />
@@ -15,17 +19,17 @@ export default function About () {
         <div className='leftCol'>
           <text>Serviços</text>
           <div className='itens'>
-            <button onClick={() => setTextSelecioned(1)}>
+            <button onClick={() => { setTextSelecioned(1); setScrollLeft(0) }} id='buttonMobile'>
                 Aplicativos Mobile
               <div className={textSelecioned === 1 ? 'buttonBorder' : ''} />
             </button>
 
-            <button onClick={() => setTextSelecioned(2)}>
+            <button onClick={() => setTextSelecioned(2)} id='buttonWeb'>
                 Desenvolvimento Web
               <div className={textSelecioned === 2 ? 'buttonBorder' : ''} />
             </button>
 
-            <button onClick={() => setTextSelecioned(3)}>
+            <button onClick={() => { setTextSelecioned(3); setScrollLeft(100) }} id='buttonDesign'>
                 Criação de Design
               <div className={textSelecioned === 3 ? 'buttonBorder' : ''} />
             </button>
