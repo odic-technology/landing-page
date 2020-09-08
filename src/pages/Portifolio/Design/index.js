@@ -1,7 +1,6 @@
 import React from 'react'
 
 import OdicHeader from '../../../components/Header/OdicHeader'
-import PortifolioHeader from '../../../components/PortifolioHeader/PortifolioHeader'
 
 import TurboMaquinas from '../../../assets/turboMaquinasPortifolio.png'
 import TurboMaquinasMobile from '../../../assets/turboMaquinasPortifolioMobile.png'
@@ -19,8 +18,7 @@ export default function Design () {
 
   return (
     <div className='portifolioDesign'>
-      <OdicHeader hasBackButton title='Turbo Máquinas' pageSelected='Portfólio' />
-      <PortifolioHeader title='Turbo Máquinas' />
+      <OdicHeader hasBackButton hasBackButtonMobile title='Turbo Máquinas' pageSelected='Portfólio' />
       <div className='divImage'>
         {renderImage()}
       </div>

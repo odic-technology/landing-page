@@ -46,6 +46,10 @@
   justify-content: flex-end !important;
 }
 
+.contactForm .cardContact .cardContactContent .inputInvalid {
+  border: 2px solid red;
+}
+
 @media (max-width: 600px) {
   .contactForm {
     width: 80vw;

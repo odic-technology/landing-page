@@ -39,15 +39,15 @@ export default function About () {
             <text className='aboutFirstText'>Após algum tempo, percebemos que estávamos tendo bons resultados e queríamos ampliar o nosso trabalho para públicos maiores, então descobrimos o poder que tínhamos em nossas mãos: a tecnologia. Começamos estudando bastante, aplicando os conhecimentos de programação e design adquiridos no dia-a-dia e nossa paixão foi aumentando cada vez mais até o ponto onde percebemos como poderíamos mudar a vida das pessoas com essa ferramenta extremamente poderosa.</text>
             <text className='aboutFirstText'>Desde então, a Odic vem assumindo protagonismo ao ajudar as pessoas a colocarem suas ideias em prática e assim, impactando ainda mais na vida de um público cada vez maior!</text>
           </div>
-          <div className={textSelecioned !== 2 ? 'hide' : ''}>
+          <div className={textSelecioned !== 2 ? 'hide aboutText2' : 'aboutText2'}>
             <text className='textBold'>Posso lhe contar um segredo?</text>
             <text>Somos um time multidisciplinar, de jovens extremamente engajados e apaixonados pelo que fazemos. Isto, faz toda a diferença para que todos os projetos desenvolvidos por nós, passem necessariamente pelas soluções mais criativas e extraordinárias para acertarmos em cheio na melhor experiência para seu usuário/cliente final.</text>
           </div>
-          <div className={textSelecioned !== 3 ? 'hide' : ''}>
+          <div className={textSelecioned !== 3 ? 'hide aboutText3' : 'aboutText3'}>
             <text className='textBold'>Você sempre por perto!</text>
             <text>Nós trabalhamos com Sprints curtos e frequentemente validamos todo o processo com você. Desta forma, garantimos que o produto seja entregue de acordo com as suas necessidades e de seus usuários/clientes de forma ágil, eficiente e transparente.</text>
           </div>
-          <div className={textSelecioned !== 4 ? 'hide' : ''}>
+          <div className={textSelecioned !== 4 ? 'hide aboutText4' : 'aboutText4'}>
             <text className='textBold'>Trabalhamos com a imaginação!</text>
             <text>Nosso foco sempre será: ajudar nossos clientes a desenvolverem, da maneira mais completa, as ideias mais profundas que tiveram para criar ou recriar soluções inovadoras que irão dar aquela alavancada em seus objetivos. Desta forma, além de lhe proporcionar uma experiência incrível, iremos tornar seu negócio mais atrativo e fazer com que mais e mais pessoas saibam quem você realmente é. </text>
             <text>Ainda não tem uma boa ideia para resolver um problema? sem problemas, nós também iremos te ajudar com isso!</text>

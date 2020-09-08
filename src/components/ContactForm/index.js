@@ -13,28 +13,60 @@ export default function ContactForm ({ setFormAvailable, isFirstSelected, isSeco
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
 
-  function validateEmail (text) {
-    var isValid = EmailValidator.validate(text)
-    setEmail(text)
-    console.log(isValid)
-    // TODO create a message to user
+  function putBorderError (errorArray) {
+    errorArray.forEach(element => {
+      document.getElementById(element).className = 'inputInvalid'
+    })
+  }
+
+  function cleanAllInvalidFields () {
+    document.getElementById('inputName').className = ''
+    document.getElementById('inputEmail').className = ''
+    document.getElementById('inputPhone').className = ''
+  }
+
+  function validateFields () {
+    cleanAllInvalidFields()
+    var errorArray = []
+    var isEmailValid = EmailValidator.validate(email)
+    var phoneAux = phone.replaceAll('_', '').replaceAll('(', '').replaceAll(')', '').replaceAll('-', '')
+
+    if (!isEmailValid) {
+      errorArray.push('inputEmail')
+    }
+    if (name.length <= 3) {
+      errorArray.push('inputName')
+    }
+    if (phoneAux.length <= 10) {
+      errorArray.push('inputPhone')
+    }
+
+    if (errorArray.length === 0) {
+      return true
+    } else {
+      putBorderError(errorArray)
+      return false
+    }
   }
 
   async function sendInformations () {
-    const information = {
-      name: name,
-      email: email,
-      phone: phone,
-      web: isFirstSelected.toString(),
-      mobile: isSecondSelected.toString(),
-      design: isThirdSelected.toString()
-    }
+    var isFieldsValid = validateFields()
+    if (isFieldsValid) {
+      const information = {
+        name: name,
+        email: email,
+        phone: phone,
+        web: isFirstSelected.toString(),
+        mobile: isSecondSelected.toString(),
+        design: isThirdSelected.toString()
+      }
 
-    await postApi('/', information)
-    setFormAvailable(3)
-    setTimeout(() => {
-      setFormAvailable(1)
-    }, 8000)
+      await postApi('/', information)
+      setFormAvailable(3)
+      setTimeout(() => {
+        setFormAvailable(1)
+      }, 8000)
+    }
   }
 
   return (
@@ -53,9 +85,9 @@ export default function ContactForm ({ setFormAvailable, isFirstSelected, isSeco
             </div>
           </div>
           <div className='cardContactContent'>
-            <input value={name} onChange={(event) => { setName(event.target.value) }} placeholder='Nome completo' />
-            <input placeholder='E-mail' onChange={(event) => validateEmail(event.target.value)} />
-            <InputMask placeholder='Telefone para contato' mask='(99) 99999-9999' onChange={(event) => setPhone(event.target.value)} />
+            <input id='inputName' value={name} onChange={(event) => { setName(event.target.value) }} placeholder='Nome completo' />
+            <input id='inputEmail' placeholder='E-mail' onChange={(event) => setEmail(event.target.value)} />
+            <InputMask id='inputPhone' placeholder='Telefone para contato' mask='(99) 99999-9999' onChange={(event) => setPhone(event.target.value)} />
           </div>
         </div>
         <div className='bottomRightColumn'>

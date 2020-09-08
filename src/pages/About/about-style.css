@@ -96,6 +96,18 @@
     opacity: 0;
 }
 
+.about .rightCol .aboutText2 {
+    padding-top: 22vh;
+}
+
+.about .rightCol .aboutText3 {
+    padding-top: 19vh;
+}
+
+.about .rightCol .aboutText4 {
+    padding-top: 35.5vh;
+}
+
 .about .rightCol .textBold {
     font-weight: bold;
 }
@@ -165,5 +177,17 @@
 
     .about .rightCol text:not(:first-child) {
         padding-top: 5vh;
+    }
+
+    .about .rightCol .aboutText2 {
+        padding-top: 7vh;
+    }
+    
+    .about .rightCol .aboutText3 {
+        padding-top: 7vh;
+    }
+    
+    .about .rightCol .aboutText4 {
+        padding-top: 7vh;
     }
 }

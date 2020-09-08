@@ -15,7 +15,7 @@
 
 @media (max-width: 600px) {
   .portifolioWeb .divImage {
-    padding-top: 0px;
+    padding-top: 12vh;
     flex-direction: column;
   }
 }

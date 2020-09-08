@@ -1,17 +1,20 @@
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
     height: 12vh;
     position: fixed;
     right: 0px;
     top: 0px;
     width: 100vw;
     z-index: 11;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #09292F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: top 0.3s;
+}
+
+.header .topHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .hideHeader {
@@ -178,12 +181,22 @@ a:link {
     padding: 1vw;
 }
 
+.mobilePortfolioHeader {
+    display: none;
+}
+
 @media (max-width: 600px) {
     .header {
-        margin-top: 2.5vh;
-        background-color: transparent;
         box-shadow: none;
-        height: 4vh;
+        height: auto;
+    }
+
+    .hideHeader {
+        top: -14vh;
+    }
+
+    .topHeader {
+        height: 7vh;
     }
 
     .halfHeader {
@@ -225,6 +238,26 @@ a:link {
         margin-top: -20px;
     }
 
+    .mobilePortfolioHeader {
+        padding: 2.5vh 0px 1vh 2vw;
+        display: flex;
+        align-items: center;
+    }
+      
+    .mobilePortfolioHeader text {
+        font-family: Montserrat;
+        color: white;
+        font-size: 3.5vw;
+        margin-left: 3vw;
+        font-weight: 900;
+    }
+    
+    .mobilePortfolioHeader img {
+        width: 4vw;
+        cursor: pointer;
+        margin-left: 2vw;
+    }
+
     .openBackground {
         opacity: 1 !important;
         visibility: visible !important;
@@ -254,6 +287,7 @@ a:link {
         justify-content: flex-end;
         width: 100vw;
         margin-bottom: 2vh;
+        margin-top: 2.5vh;
     }
 
     #menu .closeMenuIcon img {
@@ -268,6 +302,7 @@ a:link {
     .menuButton {
         width: auto;
         margin-right: 8vw;
+        height: 2vh;
         -webkit-tap-highlight-color: transparent;
     }
 

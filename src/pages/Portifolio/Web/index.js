@@ -3,7 +3,6 @@ import React from 'react'
 import './webStyle.css'
 
 import OdicHeader from '../../../components/Header/OdicHeader'
-import PortifolioHeader from '../../../components/PortifolioHeader/PortifolioHeader'
 
 import Museu from '../../../assets/desafioPortifolio.png'
 import MuseuMobile1 from '../../../assets/desafioPortifolioMobile1.png'
@@ -25,8 +24,7 @@ export default function Web () {
 
   return (
     <div className='portifolioWeb'>
-      <OdicHeader hasBackButton title='Grande Desafio 2020' pageSelected='Portfólio' />
-      <PortifolioHeader title='Grande Desafio 2020' />
+      <OdicHeader hasBackButton hasBackButtonMobile title='Grande Desafio 2020' pageSelected='Portfólio' />
       <div className='divImage'>
         {renderImage()}
       </div>

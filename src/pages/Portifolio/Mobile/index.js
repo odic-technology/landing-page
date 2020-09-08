@@ -1,7 +1,6 @@
 import React from 'react'
 
 import OdicHeader from '../../../components/Header/OdicHeader'
-import PortifolioHeader from '../../../components/PortifolioHeader/PortifolioHeader'
 
 import Matchfy from '../../../assets/matchfyPortifolio.png'
 import MatchfyMobile1 from '../../../assets/matchfyPortifolioMobile1.png'
@@ -25,8 +24,7 @@ export default function Mobile () {
 
   return (
     <div className='portifolioMobile'>
-      <OdicHeader hasBackButton title='Matchfy' pageSelected='Portfólio' />
-      <PortifolioHeader title='Matchfy' />
+      <OdicHeader hasBackButton hasBackButtonMobile title='Matchfy' pageSelected='Portfólio' />
       <div className='divImage'>
         {renderImage()}
       </div>
