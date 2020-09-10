@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import './header-style.css'
-import { Context } from '../../context/index'
 
 import MenuIcon from '../../assets/menuIcon.svg'
 import CloseMenuIcon from '../../assets/closeMenuIcon.svg'
@@ -11,15 +11,20 @@ import ArrowBack from '../../assets/back-arrow.svg'
 import ArrowBackMobile from '../../assets/backArrowMobile.svg'
 
 export default function Navbar ({ isHalfHeader, hasBackButton, title, pageSelected, hasBackButtonMobile }) {
-  // const { global } = useContext(Context)
-  // const { state: globalState, dispatch: globalDispatch } = global
-
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
   const [lastScroll, setlastScroll] = useState(0)
 
+  const isMenuOpen = useSelector(state => state.infoState.isMenuOpen)
+  const dispatch = useDispatch()
+
   useEffect(() => {
-    // console.log(globalState.isMenuOpen)
+    function seeIfMenuIsOpen () {
+      if (window.innerWidth > 600) {
+        setIsOpen(isMenuOpen)
+      }
+    }
+    seeIfMenuIsOpen()
 
     window.addEventListener('scroll', (event) => {
       var scroll = window.scrollY
@@ -66,7 +71,11 @@ export default function Navbar ({ isHalfHeader, hasBackButton, title, pageSelect
 
   function setIsMenuOpen (value) {
     setIsOpen(value)
-    // globalDispatch({ type: 'set_is_open', payload: { isMenuOpen: value } })
+  }
+
+  function setIsMenuOpenWithRedux (value) {
+    setIsOpen(value)
+    dispatch({ type: 'set_is_menu_open', isMenuOpen: value })
   }
 
   return (
@@ -89,7 +98,7 @@ export default function Navbar ({ isHalfHeader, hasBackButton, title, pageSelect
               </button>
             </Link>
           </div>
-          <div onClick={() => setIsMenuOpen(!isOpen)} className='menuButton basic'>
+          <div onClick={() => setIsMenuOpenWithRedux(!isOpen)} className='menuButton basic'>
             <img src={MenuIcon} alt='icon' />
             <text className='menuText'>Menu</text>
           </div>
@@ -99,3 +108,9 @@ export default function Navbar ({ isHalfHeader, hasBackButton, title, pageSelect
     </>
   )
 }
+
+// const mapStateToProps = store => ({
+//   isMenuOpen: store.storeState.isMenuOpen
+// })
+
+// export default connect(mapStateToProps)(Navbar)

@@ -9,11 +9,11 @@ function App () {
   return (
     <>
       <OdicHeader isHalfHeader pageSelected='Início' />
-      <div class='home'>
+      <div className='home'>
         <div className='divHomeBanner'>
           <img src={Banner} className='homeBanner' alt='banner' />
         </div>
-        <div class='homeInfo'>
+        <div className='homeInfo'>
           <div align='middle' className='homeDiv'>
             <div>
               <h1 className='homeTitle'>Somos a empresa digital preparada para te acompanhar à 4ª Revolução Industrial.</h1>
