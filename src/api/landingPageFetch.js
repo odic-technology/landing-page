@@ -1,4 +1,4 @@
-const URL_BASE = 'http://localhost:3000'
+const URL_BASE = 'https://landing-page-api-289313.ue.r.appspot.com'
 
 export default function landingPageFetch (url, options) {
   const defaultHeader = { headers: { 'Content-Type': 'application/json' } }
