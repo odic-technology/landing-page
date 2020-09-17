@@ -8,7 +8,7 @@ import { postApi } from '../../api/landingPageFetch'
 
 import './contactFormStyle.css'
 
-export default function ContactForm ({ setFormAvailable, isFirstSelected, isSecondSelected, isThirdSelected }) {
+export default function ContactForm ({ setFormAvailable, isFirstSelected, isSecondSelected, isThirdSelected, resetSelectedStates }) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
@@ -61,7 +61,8 @@ export default function ContactForm ({ setFormAvailable, isFirstSelected, isSeco
         design: isThirdSelected.toString()
       }
 
-      await postApi('/', information)
+      postApi('/', information)
+      resetSelectedStates()
       setFormAvailable(3)
       setTimeout(() => {
         setFormAvailable(1)

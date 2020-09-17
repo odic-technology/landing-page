@@ -42,6 +42,14 @@ export default function Contact () {
     }
   }
 
+  function resetSelectedStates () {
+    setIsFirstSelected(false)
+    setIsSecondSelected(false)
+    setIsThirdSelected(false)
+    setQuantitySelected(0)
+    setTypeSelected(1)
+  }
+
   return (
     <div className='contact'>
       <OdicHeader pageSelected='Contato' />
@@ -65,7 +73,7 @@ export default function Contact () {
             <ContactRightColumn setTypeSelected={setTypeSelected} typeSelected={typeSelected} isFirstSelected={isFirstSelected} isSecondSelected={isSecondSelected} isThirdSelected={isThirdSelected} selectItem={selectItem} quantitySelected={quantitySelected} setFormAvailable={setFormAvailable} />
           </div>
           <div className={formAvailable !== 2 ? 'hide' : ''}>
-            <ContactForm setFormAvailable={setFormAvailable} isFirstSelected={isFirstSelected} isSecondSelected={isSecondSelected} isThirdSelected={isThirdSelected} />
+            <ContactForm resetSelectedStates={resetSelectedStates} setFormAvailable={setFormAvailable} isFirstSelected={isFirstSelected} isSecondSelected={isSecondSelected} isThirdSelected={isThirdSelected} />
           </div>
           <div className={formAvailable !== 3 ? 'hide' : ''}>
             <ContactSuccess setFormAvailable={setFormAvailable} />
