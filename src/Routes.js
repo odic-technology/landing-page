@@ -14,13 +14,14 @@ import {
   Route
 } from 'react-router-dom'
 
-const backgroundStyle = {
-  backgroundColor: '#304448'
+const globalStyle = {
+  backgroundColor: '#000000',
+  fontFamily: 'Montserrat'
 }
 
 export default function Routes () {
   return (
-    <div style={backgroundStyle}>
+    <div style={globalStyle}>
       <Switch>
         <Route path='/about'>
           <About />

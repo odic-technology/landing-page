@@ -1,0 +1,29 @@
+.portfolioFooter {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2vw;
+}
+
+.portfolioFooter .icon {
+    width: 2vw;
+}
+
+.portfolioFooter text {
+    color: white;
+    font-size: 1.5vw !important;
+    margin-left: 3vw;
+}
+
+.portfolioFooter .odicInfo {
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolioFooter .odicInfo div {
+    display: flex;
+    align-items: center;
+}

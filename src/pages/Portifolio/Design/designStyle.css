@@ -1,20 +1,227 @@
-.portifolioDesign .divImage {
+.portifolioDesign .about {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-top: 12vh;
+    height: 80vh;
+    margin: 0px 10vw;
 }
 
-.portifolioDesign .divImage img {
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-    -ms-transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+.portifolioDesign text {
+  font-size: 1.1vw;
+}
+
+.portifolioDesign .textHeader {
+  font-size: 2.2vw;
+  margin-bottom: 3vh;
+}
+
+.portifolioDesign .about text {
+  color: white;
+  width: 30vw;
+}
+
+.portifolioDesign .about .cardLogo {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 35vh;
+  border-radius: 1vw;
+}
+
+.portifolioDesign .about .cardLogo img {
+  width: 25vw;
+}
+
+.portifolioDesign .goals {
+  background-color: #023B7E;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px 31vw 0px 10vw;
+}
+
+.portifolioDesign .goals text {
+  color: white;
+}
+
+.portifolioDesign .colorPallete {
+  background-color: white;
+  width: 70vw;
+  height: 40vh;
+  margin-top: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 5vw;
+}
+
+.portifolioDesign .colorPallete div {
+  display: flex;
+  flex-direction: column;
+}
+
+.portifolioDesign .colorPallete .textPallete {
+  width: 30vw;
+}
+
+.portifolioDesign .colorPallete .color {
+  align-items: center;
+}
+
+.portifolioDesign .colorPallete div .square {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 1vw;
+  box-shadow: 0px 3px 5px lightgrey;
+}
+
+.portifolioDesign .colorPallete div .blue {
+  background-color: #023B7E;
+}
+
+.portifolioDesign .colorPallete div .red {
+  background-color: #EF3C1F;
+}
+
+.portifolioDesign .colorPallete .color text {
+  margin-top: 1vw;
+  font-weight: bold;
+}
+
+.portifolioDesign .divFonts {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portifolioDesign .fonts {
+  background-color: white;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60vh;
+  margin: 15vh 0px;
+  padding-left: 5vw;
+}
+
+.portifolioDesign .fonts .fontsFamily {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10vh;
+}
+
+.portifolioDesign .improvement {
+  background-color: #022F64;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8vh;
+  padding-bottom: 5vh;
+}
+
+.portifolioDesign .improvement text {
+  color: white;
+}
+
+.portifolioDesign .improvement .comparison {
+  display: flex;
+  margin-top: 15vh;
+}
+
+.portifolioDesign .improvement .divHalf {
+  width: 48vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portifolioDesign .improvement .divHalfCenter {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portifolioDesign .improvement .divHalf text {
+  font-size: 1.5vw;
+  margin-bottom: 3vh;
+}
+
+.portifolioDesign .improvement .afterImage {
+  width: 40vw;
+}
+
+.portifolioDesign .improvement .divHalf .afterImage1 {
+  width: 38.5vw;
+  margin-left: 1.1vw;
+}
+
+.portifolioDesign .improvement .divHalf .beforeImage {
+  width: 35vw;
+}
+
+.portifolioDesign .improvement .divHalf .divHalfImages {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portifolioDesign .learnings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.portifolioDesign .learnings text {
+  color: white;
+  width: 46vw;
+}
+
+.portifolioDesign .learnings text:first-child {
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+.portifolioDesign .feedback {
+  background-color: white;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10vh 0px;
+}
+
+.portifolioDesign .feedback text {
+  width: 55vw;
+  text-align: center;
+}
+
+.portifolioDesign .feedback .author {
+  font-size: 1.5vw;
+  font-weight: 600;
+  text-align: start;
+  width: 30vw;
+  margin-right: -20vw;
+}
+
+.portifolioDesign .feedback text text {
+  font-size: 3vw;
 }
 
 @media (max-width: 600px) {
-  .portifolioDesign .divImage {
+  .portifolioDesign .about {
     padding-top: 14vh;
   }
 }
