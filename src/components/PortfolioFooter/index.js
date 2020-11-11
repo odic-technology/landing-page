@@ -8,7 +8,7 @@ import CellphoneIcon from '../../assets/cellphoneIcon.svg'
 export default function PortfolioFooter () {
   return (
     <div className='portfolioFooter'>
-      <img alt='Odic Logo' src={OdicLogo} />
+      <img alt='Odic Logo' src={OdicLogo} className='odicLogo' />
       <div className='odicInfo'>
         <div>
           <img alt='Email Icon' src={EmailIcon} className='icon' />

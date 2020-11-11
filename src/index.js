@@ -5,12 +5,15 @@ import { Store } from './store'
 
 import { BrowserRouter as Router } from 'react-router-dom'
 import Routes from './Routes'
+import './globalStyle.css'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={Store}>
       <Router>
-        <Routes />
+        <div className='globalStyle'>
+          <Routes />
+        </div>
       </Router>
     </Provider>
   </React.StrictMode>,

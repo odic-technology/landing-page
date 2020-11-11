@@ -2,15 +2,16 @@ import React from 'react'
 
 import OdicHeader from '../../../components/Header/OdicHeader'
 import PortfolioFooter from '../../../components/PortfolioFooter/index'
+import PortfolioFont from '../../../components/PortfolioFont'
 
-import LogoTurbo from '../../../assets/portfolio/logoTurboMaquinas.svg'
-import PortfolioTurboAfter1 from '../../../assets/portfolio/portfolioTurboAfter1.png'
-import PortfolioTurboAfter2 from '../../../assets/portfolio/portfolioTurboAfter2.svg'
-import PortfolioTurboAfter3 from '../../../assets/portfolio/portfolioTurboAfter3.svg'
-import PortfolioTurboAfter4 from '../../../assets/portfolio/portfolioTurboAfter4.svg'
-import PortfolioTurboBefore1 from '../../../assets/portfolio/portfolioTurboBefore1.svg'
-import PortfolioTurboBefore2 from '../../../assets/portfolio/portfolioTurboBefore2.svg'
-import PortfolioTurboBefore3 from '../../../assets/portfolio/portfolioTurboBefore3.svg'
+import LogoTurbo from '../../../assets/portfolio/turboMaquinas/logoTurboMaquinas.svg'
+import PortfolioTurboAfter1 from '../../../assets/portfolio/turboMaquinas/portfolioTurboAfter1.png'
+import PortfolioTurboAfter2 from '../../../assets/portfolio/turboMaquinas/portfolioTurboAfter2.svg'
+import PortfolioTurboAfter3 from '../../../assets/portfolio/turboMaquinas/portfolioTurboAfter3.svg'
+import PortfolioTurboAfter4 from '../../../assets/portfolio/turboMaquinas/portfolioTurboAfter4.svg'
+import PortfolioTurboBefore1 from '../../../assets/portfolio/turboMaquinas/portfolioTurboBefore1.svg'
+import PortfolioTurboBefore2 from '../../../assets/portfolio/turboMaquinas/portfolioTurboBefore2.svg'
+import PortfolioTurboBefore3 from '../../../assets/portfolio/turboMaquinas/portfolioTurboBefore3.svg'
 
 import './designStyle.css'
 
@@ -42,16 +43,7 @@ export default function Design () {
           <text>#EF3C1F</text>
         </div>
       </div>
-      <div className='divFonts'>
-        <div className='fonts'>
-          <text className='textHeader'>Fonte</text>
-          <div className='fontsFamily'>
-            <text className='textHeader'>Montserrat</text>
-            <text>Designed by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly</text>
-          </div>
-          <text>Três pratos de trigo para três tigres tristes.</text>
-        </div>
-      </div>
+      <PortfolioFont />
       <div className='improvement'>
         <text className='textHeader'>Remodelação</text>
         <div className='comparison'>

@@ -14,40 +14,33 @@ import {
   Route
 } from 'react-router-dom'
 
-const globalStyle = {
-  backgroundColor: '#000000',
-  fontFamily: 'Montserrat'
-}
-
 export default function Routes () {
   return (
-    <div style={globalStyle}>
-      <Switch>
-        <Route path='/about'>
-          <About />
-        </Route>
-        <Route path='/contact'>
-          <Contact />
-        </Route>
-        <Route path='/design'>
-          <Design />
-        </Route>
-        <Route path='/mobile'>
-          <Mobile />
-        </Route>
-        <Route path='/portfolio'>
-          <Portfolio />
-        </Route>
-        <Route path='/web'>
-          <Web />
-        </Route>
-        <Route path='/services'>
-          <Services />
-        </Route>
-        <Route path='/' exact>
-          <App />
-        </Route>
-      </Switch>
-    </div>
+    <Switch>
+      <Route path='/about'>
+        <About />
+      </Route>
+      <Route path='/contact'>
+        <Contact />
+      </Route>
+      <Route path='/design'>
+        <Design />
+      </Route>
+      <Route path='/mobile'>
+        <Mobile />
+      </Route>
+      <Route path='/portfolio'>
+        <Portfolio />
+      </Route>
+      <Route path='/web'>
+        <Web />
+      </Route>
+      <Route path='/services'>
+        <Services />
+      </Route>
+      <Route path='/' exact>
+        <App />
+      </Route>
+    </Switch>
   )
 }

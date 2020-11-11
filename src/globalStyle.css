@@ -1,0 +1,22 @@
+.globalStyle {
+    background-color: #000000;
+    font-family: 'Montserrat';
+}
+
+.globalStyle text {
+    font-size: 1.1vw;
+}
+
+.globalStyle .textTitle {
+    font-size: 2.2vw;
+}
+
+.globalStyle .textBorderBottom text:not(:last-child) {
+    margin-bottom: 3vh;
+}
+
+.globalStyle .flexAlignDirection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

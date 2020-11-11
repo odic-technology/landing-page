@@ -1,21 +1,374 @@
-.portifolioWeb .divImage {
+.portfolioMuseu .about {
+  padding-top: 12vh;
+  height: 80vh;
+}
+
+.portfolioMuseu .about {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 12vh;
 }
 
-.portifolioWeb .divImage img {
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-  -ms-transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+.portfolioMuseu .about text {
+  color: white;
+  width: 30vw;
+  margin-right: 5vw;
+}
+
+.portfolioMuseu .about .icons {
+  width: 30vw;
+  background-color: #FEF4E8;
+  height: 32vh;
+  border-radius: 1vw;
+  justify-content: space-between;
+  padding: 3vh 0px;
+}
+
+.portfolioMuseu .about .icons img {
+  width: 16vw;
+}
+
+.portfolioMuseu .about .icons img:last-child {
+  margin-left: 3vw;
+}
+
+.portfolioMuseu .goals {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10vw;
+  padding-bottom: 10vh;
+}
+
+.portfolioMuseu .goals text {
+  color: white;
+}
+
+.portfolioMuseu .firstIdea {
+  background-color:#FEF4E8;
+  padding: 10vh;
+}
+
+.portfolioMuseu .firstIdea text {
+  width: 50vw;
+}
+
+.portfolioMuseu .firstIdea .textTitle {
+  width: auto;
+}
+
+.portfolioMuseu .firstIdea img {
+  margin: 5vh 0px;
+  width: 30vw;
+}
+
+.portfolioMuseu .development {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 10vw;
+}
+
+.portfolioMuseu .development text {
+  color: white;
+  width: 56vw;
+}
+
+.portfolioMuseu .versionZero {
+  background-color: #FEF4E8;
+  padding: 10vh 0px;
+}
+
+.portfolioMuseu .versionZero .textTitle {
+  width: auto;
+}
+
+.portfolioMuseu .versionZero text {
+  width: 60vw;
+}
+
+.portfolioMuseu .versionZero img {
+  width: 15vw;
+}
+
+.portfolioMuseu .versionZero .backgroundPhotos {
+  background-color: #E8EBCD;
+  width: 70vw;
+  padding: 5vh 5vw 0px 5vw;
+  margin-top: 5vh;
+}
+
+.portfolioMuseu .versionZero .backgroundPhotos div {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+
+.portfolioMuseu .versionZero .backgroundPhotos div:last-child {
+  justify-content: space-evenly;
+}
+
+.portfolioMuseu .versionZero .mainColor {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.portfolioMuseu .versionZero .mainColor .palleteColor {
+  background-color:  #DA2127;
+  width: 5vw;
+  height: 5vw;
+}
+
+.portfolioMuseu .versionZero .mainColor .textTitle {
+  margin-right: 5vw;
+  width: 20vw;
+}
+
+.portfolioMuseu .versionZero .mainColor .textMainColor {
+  margin-left: 3vw;
+  width: 15vw;
+}
+
+.portfolioMuseu .versionZero .mainColorFinally {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  margin-top: 20vh;
+}
+
+.portfolioMuseu .versionZero .mainColorFinally text {
+  width: 35vw;
+}
+
+.portfolioMuseu .updateVersion {
+  padding: 10vh 10vw;
+}
+
+.portfolioMuseu .updateVersion text {
+  color: white;
+  width: 45vw;
+}
+
+.portfolioMuseu .colors {
+  background-color: white;
+  padding: 10vh 10vw;
+}
+
+.portfolioMuseu .colors .subTitle {
+  width: 50vw;
+  margin-top: 7vh;
+  margin-bottom: 2vh;
+  position: relative;
+}
+
+.portfolioMuseu .colors .subTitle img {
+  position: absolute;
+  right: -19vw;
+  top: -5vh;
+  width: 15vw;
+}
+
+.portfolioMuseu .divColors {
+  align-self: flex-start;
+  margin-top: 7vh;
+}
+
+.portfolioMuseu .squareColors {
+  display: flex;
+  margin-top: 2vh;
+}
+
+.portfolioMuseu .theApp {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10vw 10vh 10vw;
+}
+
+.portfolioMuseu .theApp text {
+  color: white;
+  margin-top: 2vh;
+  width: 47vw;
+}
+
+.portfolioMuseu .introduction {
+  background-color: #F9E8BD;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5vh 5vw;
+}
+
+.portfolioMuseu .introduction img {
+  width: 20vw;
+}
+
+.portfolioMuseu .introduction text {
+  width: 20vw;
+  align-self: center;
+}
+
+.portfolioMuseu .participantCode {
+  display: flex;
+  margin-top: 25vh;
+}
+
+.portfolioMuseu .participantCodeLeft {
+  background-color: #F9E8BD;
+  width: 40vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.portfolioMuseu .participantCodeLeft img {
+  width: 20vw;
+  margin-right: -3vw;
+  margin-top: -15vh;
+  z-index: 1;
+}
+
+.portfolioMuseu .participantCodeRight {
+  background-color: #E8D7AC;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  padding: 5vh 5vw;
+}
+
+.portfolioMuseu .participantCodeRight img {
+  width: 20vw;
+}
+
+.portfolioMuseu .participantCodeRight div {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 2vw;
+}
+
+.portfolioMuseu .homeScreen {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portfolioMuseu .homeScreen .homeScreenContent {
+  width: 76vw;
+  background-color: #F9E8BD;
+  margin: 10vh 0px;
+  display: flex;
+  align-items: center;
+  padding: 5vh 2vw;
+}
+
+.portfolioMuseu .homeScreen .homeScreenContent img {
+  width: 20vw;
+}
+
+.portfolioMuseu .homeScreen .homeScreenContent img:first-child {
+  width: 20vw;
+  margin-right: 1vw;
+}
+
+.portfolioMuseu .homeScreen .homeScreenContent div {
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolioMuseu .flowCapture {
+  background-color: #E8D7AC;
+  display: flex;
+  align-items: center;
+  padding: 5vh 1vw;
+}
+
+.portfolioMuseu .flowCapture img {
+  width: 19vw;
+}
+
+.portfolioMuseu .flowCapture div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vw;
+}
+
+.portfolioMuseu .flowCapture div text:not(:first-child) {
+  padding-right: 5vw;
+}
+
+.portfolioMuseu .rankContent {
+  width: 71vw;
+  background-color: #F9E8BD;
+  margin: 15vh 0px;
+  display: flex;
+  align-items: center;
+  padding: 0px 1vw 0px 5vw;
+}
+
+.portfolioMuseu .rankContent div {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolioMuseu .rankContent div text {
+  padding-right: 5vw;
+}
+
+.portfolioMuseu .rankContent img {
+  margin-right: 2vw;
+  margin-top: -7vh;
+}
+
+.portfolioMuseu .entities {
+  background-color: #FFDA7B;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+
+.portfolioMuseu .entities img {
+  margin-top: -7vh;
+}
+
+.portfolioMuseu .entities div {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  padding: 0px 5vw;
+}
+
+.portfolioMuseu .results {
+  color: white;
+  justify-content: center;
+  height: 60vh;
+}
+
+.portfolioMuseu .results text {
+  width: 40vw;
+}
+
+.portfolioMuseu .learn {
+  background-color: white;
+  height: 80vh;
+  justify-content: center;
+  position: relative;
+}
+
+.portfolioMuseu .learn text {
+  width: 50vw;
+  text-align: center;
+}
+
+.portfolioMuseu .learnThankYou {
+  position: absolute;
+  left: 5vw;
+  bottom: 5vh;
+  width: auto !important;
 }
 
 @media (max-width: 600px) {
   .portifolioWeb .divImage {
     padding-top: 12vh;
-    flex-direction: column;
   }
 }
