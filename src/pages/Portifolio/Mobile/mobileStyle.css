@@ -1,16 +1,342 @@
-.portifolioMobile .divImage {
+.portifolioMobile text {
+  color: white;
+}
+
+.portifolioMobile .firstProject {
+  height: 60vh;
+  justify-content: center;
+  padding: 12vh 10vw 0px 10vw;
+}
+
+.portifolioMobile .visualIdentity {
+  padding: 0px 10vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portifolioMobile .visualIdentity>div {
+  width: 40vw;
+}
+
+.portifolioMobile .visualIdentity .matchfyCard {
+  background-color: white;
+  border-radius: 1.2vw;
+  width: 30vw;
+  height: 40vh;
+  justify-content: space-around;
+}
+
+.portifolioMobile .visualIdentity .matchfyColor div {
+  background-color: #C23334;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  margin-bottom: 1vh;
+}
+
+.portifolioMobile .visualIdentity .matchfyColor text {
+  color: black;
+  font-weight: 600;
+}
+
+.portifolioMobile .research {
+  padding: 0px 10vw;
+  margin-top: 15vh;
+  margin-bottom: 20vh;
+}
+
+.portifolioMobile .research img {
+  margin: 5vh 0px;
+}
+
+.portifolioMobile .theAppTitle {
+  margin-left: 5vw;
+}
+
+.portifolioMobile .introduction {
+  padding: 0px 5vw;
+  background-color: #C23334;
+  display: flex;
+  align-items: center;
+  margin-top: 15vh;
+  justify-content: space-between;
+}
+
+.portifolioMobile .introductionText {
+  width: 25vw;
+}
+
+.portifolioMobile .introduction img {
+  width: 18vw;
+  margin-top: -10vh;
+}
+
+.portifolioMobile .diversity {
+  padding: 10vh 5vw 0px 5vw;
+  background-color: #9B1112;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portifolioMobile .diversityText {
+  width: 25vw;
+}
+
+.portifolioMobile .diversity img {
+  width: 18vw;
+}
+
+.portifolioMobile .filters {
+  background-color: #C23334;
+  padding: 10vh 15vw;
+}
+
+.portifolioMobile .filters .filterImages {
+  display: flex;
+  justify-content: space-between;
+  width: 55vw;
+  margin: 5vh 0px;
+}
+
+.portifolioMobile .filters .filterImages img {
+  width: 15vw;
+}
+
+.portifolioMobile .complaint {
+  background-color: #9B1112;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10vh 15vw;
+}
+
+.portifolioMobile .complaint .complaintContent {
+  width: 25vw;
+}
+
+.portifolioMobile .complaint img {
+  width: 17vw;
+}
+
+.portifolioMobile .chat {
+  background-color: #C23334;
+  margin-top: 10vh;
+  padding: 5vh 0px;
+}
+
+.portifolioMobile .chat .chatLine {
+  display: flex;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.portifolioMobile .chat .chatLine:first-child {
+  margin-bottom: 10vh;
+}
+
+.portifolioMobile .chat .chatLine:not(:first-child) {
+  align-items: center;
+}
+
+.portifolioMobile .chat .chatLine div {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+}
+
+.portifolioMobile .chat .chatImages {
+  display: flex;
+  align-items: center;
+}
+
+.portifolioMobile .chat .chatImages img {
+  margin: 0px 1vw;
+  width: 16vw;
+}
+
+.portifolioMobile .chat .chatLineLeft {
+  padding-right: 12vw;
+}
+
+.portifolioMobile .chat .chatLineRight {
+  justify-content: space-between !important;
+}
+
+.portifolioMobile .homeScreen {
+  display: flex;
+  align-items: center;
+  background-color: #9B1112;
+  padding: 10vh 10vw;
+}
+
+.portifolioMobile .homeScreen div:first-child {
+  width: 20vw;
+}
+
+.portifolioMobile .homeScreen div {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+}
+
+.portifolioMobile .homeScreen img {
+  width: 15vw;
+  margin: 0px 2vw;
+}
+
+.portifolioMobile .perfilLine {
+  display: flex;
+  background-color: #C23334;
+  padding: 10vh 0px;
+}
+
+.portifolioMobile .perfilLine div:first-child {
+  width: 70vw;
+  justify-content: flex-end;
+}
+
+.portifolioMobile .perfilLine img {
+  width: 15vw;
+  margin: 0px 2vw;
+}
+
+.portifolioMobile .perfilLine div {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  padding: 0px 3vw 0px 0px;
+}
+
+.portifolioMobile .bugReport {
+  background-color: #9B1112;
+  display: flex;
+  padding: 10vh 10vw;
+  align-items: center;
+}
+
+.portifolioMobile .bugReport div:first-child {
+  width: 28vw;
+}
+
+.portifolioMobile .bugReport div {
+  width: 52vw;
+  display: flex;
+  justify-content: center;
+}
+
+.portifolioMobile .bugReport img {
+  width: 15vw;
+  margin: 0px 2vw;
+}
+
+.portifolioMobile .validation {
+  padding: 5vh 10vw;
+}
+
+.portifolioMobile .validation img {
+  margin: 5vh 0px;
+}
+
+.portifolioMobile .onlineStage {
+  display: flex;
+  align-items: center;
+  margin: 10vh 0px;
+}
+
+.portifolioMobile .onlineStage img {
+  width: 15vw;
+  z-index: 1;
+  margin: 0px 2vw;
+}
+
+.portifolioMobile .onlineStage div {
+  background-color: #C23334;
+  position: absolute;
+  width: 50vw;
+  height: 40vh;
+  left: 0px;
+}
+
+.portifolioMobile .margin10 {
+  margin: 10vh 0px;
+}
+
+.portifolioMobile .perfilDescription {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 12vh;
 }
 
-.portifolioMobile .divImage img {
+.portifolioMobile .perfilDescription div {
+  width: 40vw;
+  height: 50vh;
+  justify-content: center;
+  background-color: #C23334;
+  padding:0px 5vw;
+}
+
+.portifolioMobile .perfilDescription img {
+  width: 15vw;
+}
+
+.portifolioMobile .perfilDescription2 div {
+  background-color: #9B1112;
+  height: 40vh;
+}
+
+.portifolioMobile .perfilDescription1 {
+  margin-right: 3vw;
+}
+
+.portifolioMobile .perfilDescription2 {
+  margin-left: 3vw;
+  padding-bottom: 10vh;
+}
+
+.portifolioMobile .complaints {
+  background-color: #C23334;
+  padding: 5vh 10vw;
+}
+
+.portifolioMobile .complaints img {
+  width: 18vw;
+  margin-top: 5vh;
+}
+
+.portifolioMobile .complaintsImages {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
-  -webkit-backface-visibility: hidden;
-  -ms-transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+}
+
+.portifolioMobile .complaintsImages2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portifolioMobile .complaintsImages2 text {
+  width: 25vw;
+}
+
+.portifolioMobile .complaintsImages2 div {
+  width: 55vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.portifolioMobile .conclusion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.portifolioMobile .conclusion div {
+  width: 40vw;
 }
 
 @media (max-width: 600px) {

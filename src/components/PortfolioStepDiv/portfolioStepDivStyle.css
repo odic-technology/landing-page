@@ -1,0 +1,27 @@
+.portfolioStepDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 10vh;
+}
+  
+.portfolioStepDiv .stepDivLeft {
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    padding: 0px 20vh;
+    height: 70vh;
+    box-shadow: 10px 0px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.portfolioStepDiv .stepDivRight {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+}
+
+.portfolioStepDiv .stepDivRight img {
+    width: 17vw;
+    margin-top: -5vh;
+}

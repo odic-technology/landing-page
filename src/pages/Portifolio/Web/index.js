@@ -96,7 +96,7 @@ export default function Web () {
           <text>Quando finalizamos a “versão zero”, concordamos em fazer uma reunião com o professor para verificar se estávamos seguindo pelo caminho que ele imaginava.</text>
         </div>
       </div>
-      <div className='updateVersion textBorderBottom flexAlignDirection'>
+      <div className='updateVersion textBorderBottom flexDirection'>
         <text className='textTitle'>Versão “atualizada”</text>
         <text>Depois da reunião com o professor, nós pudemos tirar algumas ideias bem interessantes. Decidimos fazer uma análise de cada tela para verificar se havia algo que pudéssemos melhorar, então começamos a nos perguntar “que tipo de valor nós estamos agragando para as pessoas?” e “como podemos melhorar a experiência dos usuários?”</text>
       </div>
