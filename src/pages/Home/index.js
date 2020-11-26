@@ -3,7 +3,7 @@ import React from 'react'
 import './style.css'
 
 import OdicHeader from '../../components/Header/OdicHeader'
-import Banner from '../../assets/banner.png'
+import Banner from '../../assets/bannerHomeScreen.svg'
 
 function App () {
   return (
@@ -13,14 +13,10 @@ function App () {
         <div className='divHomeBanner'>
           <img src={Banner} className='homeBanner' alt='banner' />
         </div>
-        <div className='homeInfo'>
-          <div align='middle' className='homeDiv'>
-            <div>
-              <h1 className='homeTitle'>Somos a empresa digital preparada para te acompanhar à 4ª Revolução Industrial.</h1>
-              <hr className='homeLine' />
-              <p className='homeSubTitle'>Criamos soluções inovadoras para apps, sites e designs.</p>
-            </div>
-          </div>
+        <div className='homeInfo flexDirection textBorderBottom'>
+          <p className='textTitle'>Somos a empresa digital preparada para te acompanhar à 4ª Revolução Industrial.</p>
+          <div />
+          <p className='homeSubTitle'>Criamos soluções inovadoras para apps, sites e designs.</p>
         </div>
       </div>
     </>

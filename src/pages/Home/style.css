@@ -8,106 +8,68 @@ button, text {
 
 .home {
     display: flex;
+    align-items: flex-end;
+    height: 95vh;
+    padding-bottom: 5vh;
 }
 
-.divHomeBanner {
-    overflow: hidden;
-    height: 100vh;
-    width: 45vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.homeBanner {
-    height: 140vh;
-    object-fit: cover;
+.divHomeBanner img {
+    width: 50vw;
 }
 
 .homeInfo {
-    width: 55vw;
-    position: relative;
-}
-
-.homeDiv {
-    height: 90vh;
-    display: flex;
+    height: 95vh;
     justify-content: center;
-    align-items: center;
-    padding-left: 8vw;
-    padding-right: 8vw;
-    margin-top: 10vh;
+    padding: 0px 5vw;
 }
 
-.homeDiv div {
-    display: flex;
-    flex-direction: column;
-}
-
-.homeTitle {
-    font-family: Prata;
-    font-size: 2.4vw;
-    font-weight: 500;
-    color: white;
-    margin: 0;
-    margin-bottom: 2vh;
-    text-align: start;
-}
-
-.homeLine {
-    height: 2px;
-    width: 14vw;
+.homeInfo div {
+    height: 0.4vh;
+    width: 10vw;
     background: linear-gradient(270deg, rgba(0,236,208,1) 0%, rgba(25,185,207,1) 27%, rgba(43,148,207,1) 53%, rgba(75,84,206,1) 100% );
     border: 0;
-    margin: 10px 0px 10px 0px;
+    margin: 1.5vh 0px;
 }
 
 .homeSubTitle {
-    font-family: Prata;
-    font-size: 1.4vw;
-    color: white;
-    margin: 0;
-    text-align: start;
+    font-size: 1.5vw !important;
+    word-spacing: 1vw;
+    margin-top: 1vh;
 }
 
 @media (max-width: 600px) {
     .home {
         flex-direction: column-reverse;
-        overflow: hidden;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 18vh;
     }
 
-    .home div{
-        width: 100vw;
+    .divHomeBanner img {
+        width: 90vw;
+    }
+    
+    .homeInfo {
+        height: auto;
+        justify-content: center;
+        padding: 0px 5vw;
+        margin-bottom: 8vh;
     }
 
-    .homeDiv {
-        height: 20vh;
-        margin-top: 22vh;
+    .homeInfo .textTitle {
         margin-bottom: 1vh;
     }
 
-    .homeTitle {
-        width: 80vw;
-        font-size: 5vw;
-        margin-bottom: 1vh;
-    }
-
-    .homeLine {
-        height: 2px;
-        width: 50vw;
+    .homeInfo div {
+        height: 0.35vh;
+        width: 35vw;
+        margin: 0.5vh 0px;
     }
 
     .homeSubTitle {
-        font-size: 3vw;
+        font-size: 3.7vw !important;
+        word-spacing: 1vw;
         margin-top: 1vh;
     }
-
-    .homeBanner {
-        height: 80vh;
-        margin-left: 14vw;
-    }
-
-    .divHomeBanner {
-        height: 57vh;
-    }
+    
 }
