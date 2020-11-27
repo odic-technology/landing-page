@@ -8,7 +8,7 @@ import Banner from '../../assets/bannerHomeScreen.svg'
 function App () {
   return (
     <>
-      <OdicHeader isHalfHeader pageSelected='Início' />
+      <OdicHeader isHalfHeader />
       <div className='home'>
         <div className='divHomeBanner'>
           <img src={Banner} className='homeBanner' alt='banner' />

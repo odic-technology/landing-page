@@ -108,34 +108,42 @@ a:link {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -0.4vh;
 }
 
 .header .headerOdicLogo {
     width: 8vw;
 }
 
-.header .headerLogoLeftSide text {
+.header .headerLogoLeftSide p {
     display: none;
 }
 
 @media (max-width: 600px) {
-    .header {
-        box-shadow: none;
-        height: auto;
+    .header{
+        height: 8vh;
+    }
+
+    .header .topHeader {
+        height: 8vh;
     }
 
     .hideHeader {
-        top: -14vh;
-    }
-
-    .topHeader {
-        height: 7vh;
+        top: -10vh;
     }
 
     .header .headerOdicLogo {
         width: 23vw;
     }
+
+    .header .headerLogoLeftSide p {
+        display: block;
+        font-size: 3vw;
+        margin-bottom: 0.7vh;
+    }
+
+    .header .headerLogoLeftSide p:not(:last-child) {
+        margin: 0px 1vw;
+    }    
 
     .headerBackground {
         background-color: rgba(0, 0, 0, 0.7);
@@ -174,7 +182,7 @@ a:link {
         align-items: center;
     }
       
-    .mobilePortfolioHeader text {
+    .mobilePortfolioHeader p {
         color: white;
         font-size: 3.5vw;
         margin-left: 3vw;
@@ -207,6 +215,10 @@ a:link {
         -webkit-tap-highlight-color: transparent;
     }
 
+    #menu p {
+        font-size: 5.5vw;
+    }
+
     #menu a:active {
         background-color: #09292F;
     }
@@ -223,10 +235,6 @@ a:link {
         padding: 4vh 7.8vw;
     }
 
-    .basic {
-        font-size: 5vw;
-    }
-
     .menuButton {
         display: inline;
         width: auto;
@@ -235,17 +243,10 @@ a:link {
     }
 
     .menuButtonContact {
-        width: 50vw;
-        height: 7vh;
-        border-radius: 2vw !important;
-    }
-
-    .menuButtonContact text {
-        font-size: 5vw;
-    }
-
-    .header .menuButton .menuText {
-        display: none;
+        width: 70vw;
+        height: 3vh;
+        border-radius: 7vw;
+        font-size: 5.5vw;
     }
 
     .header .menuButton img {
@@ -256,7 +257,8 @@ a:link {
         border-bottom: 0px;
     }
 
-    .header .headerLogoLeftSide text {
-        display: block;
+    .menuButtonContact .filled {
+        width: 200vw;
+        height: 200vw;
     }
 }

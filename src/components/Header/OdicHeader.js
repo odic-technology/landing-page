@@ -34,29 +34,47 @@ export default function Navbar ({ hasBackButton, pageSelected }) {
       return (
         <div className='headerLogoLeftSide'>
           <img alt='' src={OdicLogo} className='headerOdicLogo' />
-          <text className='separator'>__</text>
-          <text>{pageSelected}</text>
+          <p className='separator'>{pageSelected ? '__' : ''}</p>
+          <p>{pageSelected}</p>
         </div>
       )
     }
   }
 
   function startButtonAnimation (e) {
-    var mouseX = e.pageX
-    var mouseY = e.pageY
+    if (e.changedTouches !== undefined || window.innerWidth > 600) {
+      var mouseX
+      var mouseY
+      if (window.innerWidth < 600) {
+        mouseX = e.changedTouches[0].pageX
+        mouseY = e.changedTouches[0].pageY
+      } else {
+        mouseX = e.pageX
+        mouseY = e.pageY
+      }
 
-    setRelMouseX(mouseX - buttonRef.current.offsetLeft)
-    setRelMouseY(mouseY - buttonRef.current.offsetTop)
-    setIsButtonHover(true)
+      setRelMouseX(mouseX - buttonRef.current.offsetLeft)
+      setRelMouseY(mouseY - buttonRef.current.offsetTop)
+      setIsButtonHover(true)
+    }
   }
 
   function removeButtonAnimation (e) {
-    var mouseX = e.pageX
-    var mouseY = e.pageY
+    if (e.changedTouches !== undefined || window.innerWidth > 600) {
+      var mouseX
+      var mouseY
+      if (window.innerWidth < 600) {
+        mouseX = e.changedTouches[0].pageX
+        mouseY = e.changedTouches[0].pageY
+      } else {
+        mouseX = e.pageX
+        mouseY = e.pageY
+      }
 
-    setRelMouseX(mouseX - buttonRef.current.offsetLeft)
-    setRelMouseY(mouseY - buttonRef.current.offsetTop)
-    setIsButtonHover(false)
+      setRelMouseX(mouseX - buttonRef.current.offsetLeft)
+      setRelMouseY(mouseY - buttonRef.current.offsetTop)
+      setIsButtonHover(false)
+    }
   }
 
   return (
@@ -69,12 +87,16 @@ export default function Navbar ({ hasBackButton, pageSelected }) {
             <div className='closeMenuIcon'>
               <img alt='' src={CloseMenuIcon} onClick={() => setIsOpen(false)} />
             </div>
-            <Link onClick={() => setIsOpen(false)} to='/'><p className={pageSelected === 'Início' ? 'showMenuBorder' : ''}>Início</p></Link>
+            <Link onClick={() => setIsOpen(false)} to='/'><p>Início</p></Link>
             <Link onClick={() => setIsOpen(false)} to='/about'><p className={pageSelected === 'Sobre' ? 'showMenuBorder' : ''}>Sobre</p></Link>
             <Link onClick={() => setIsOpen(false)} to='/portfolio'><p className={pageSelected === 'Portfólio' ? 'showMenuBorder' : ''}>Portfólio</p></Link>
             <Link onClick={() => setIsOpen(false)} to='/services'><p className={pageSelected === 'Serviços' ? 'showMenuBorder' : ''}>Serviços</p></Link>
             <Link onClick={() => setIsOpen(false)} to='/contact'>
-              <div ref={buttonRef} className={isButtonHover ? 'filledBorder menuButtonContact' : 'menuButtonContact'} onMouseEnter={startButtonAnimation} onMouseLeave={removeButtonAnimation}>
+              <div
+                ref={buttonRef} className={isButtonHover ? 'filledBorder menuButtonContact' : 'menuButtonContact'}
+                onMouseEnter={startButtonAnimation} onMouseLeave={removeButtonAnimation}
+                onTouchStart={startButtonAnimation} onTouchEnd={removeButtonAnimation}
+              >
                 Solicitar contato
                 <div style={{ left: relMouseX, top: relMouseY }} className={isButtonHover ? 'filled' : ''} />
               </div>

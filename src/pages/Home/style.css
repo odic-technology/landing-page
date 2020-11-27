@@ -43,6 +43,8 @@ button, text {
         align-items: center;
         justify-content: flex-end;
         padding-top: 18vh;
+        height: 82vh;
+        padding-bottom: 0px;
     }
 
     .divHomeBanner img {
