@@ -23,16 +23,16 @@ export default function Routes () {
       <Route path='/contact'>
         <Contact />
       </Route>
-      <Route path='/design'>
+      <Route path='/turboMaquinas'>
         <Design />
       </Route>
-      <Route path='/mobile'>
+      <Route path='/matchfy'>
         <Mobile />
       </Route>
       <Route path='/portfolio'>
         <Portfolio />
       </Route>
-      <Route path='/web'>
+      <Route path='/grandeDesafio'>
         <Web />
       </Route>
       <Route path='/services'>

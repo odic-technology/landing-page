@@ -1,0 +1,102 @@
+.portfolioCard {
+    display: flex;
+    padding: 10vh 7vw 0px 7vw;
+}
+
+.cardInverted {
+    flex-direction: row-reverse;
+}
+
+.portfolioCard img {
+    width: 42.6vw;
+}
+
+.portfolioCard div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    padding-left: 3vw;
+}
+
+.portfolioCard .number {
+    color: #14BCD2;
+    font-size: 7vw;
+    margin: 0px;
+}
+
+.portfolioCard .title {
+    font-size: 4.5vw;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.portfolioCard .description {
+    width: 25vw;
+}
+
+.portfolioCard button {
+    background-color: transparent;
+    border: 0.2vw solid white;
+    width: 15vw;
+    height: 2.7vw;
+    border-radius: 30px;
+}
+
+.portfolioCard button p {
+    margin: 0px;
+    font-size: 1vw;
+}
+
+@media (max-width: 600px) {
+    .portfolioCard {
+        padding: 0px;
+        position: relative;
+    }
+
+    .portfolioCard img {
+        width: 100vw;
+    }
+
+    .portfolioCard div {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: auto;
+    }
+
+    .portfolioCard .cardDivInverted {
+        align-items: flex-end;
+        margin-right: 3vw;
+    }
+
+    .portfolioCard .cardDivInverted .description {
+        text-align: end;
+    }
+
+    .portfolioCard .number {
+        font-size: 12vw;
+        font-weight: 600;
+    }
+    
+    .portfolioCard .title {
+        font-size: 7vw;
+    }
+
+    .portfolioCard .description {
+        width: auto;
+        font-size: 4vw;
+        margin-top: 0.5vh;
+        margin-bottom: 4vh;
+    }
+
+    .portfolioCard button {
+        width: 35vw;
+        height: 7vw;
+        border: 0.7vw solid white;
+    }
+    
+    .portfolioCard button p {
+        font-size: 3vw;
+    }
+}
