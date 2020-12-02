@@ -1,193 +1,93 @@
 .about {
-    height: 100vh;
-}
-
-.about .aboutContent {
-    display: flex;
-}
-
-.about .leftCol {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     height: 88vh;
-    padding-left: 8vw;
-    width: 45vw;
-    margin-top: 12vh;
+    padding-top: 12vh;
 }
 
-.about .leftCol text {
-    font-family: Prata;
-    color: white;
-    font-size: 5vw;
-    margin-bottom: 12vh;
+.about .aboutHeader {
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
 }
 
-.about .leftCol button {
-    font-family: Montserrat;
-    color: white;
+.about .aboutHeader button {
     background-color: transparent;
     border: none;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    margin-top: 2vh;
-    margin-bottom: 1vh;
-    font-size: 2.5vw;
     outline: none;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+    padding: 1vw;
 }
 
-.about .leftCol button:active {
+.about .aboutHeader button p {
+    font-weight: 500;
+    margin-bottom: 1vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.about .aboutHeader button:active {
     opacity: 0.6;
     transform: scale(0.95);
 }
 
-.about .leftCol div {
-    height: 2px;
-}
-
-.about .leftCol .buttonBorder {
+.about .aboutHeader .buttonBorder {
     height: 2px;
     background: linear-gradient(270deg, rgba(75,84,206,1) 0%, rgba(43,148,207,1) 27%, rgba(25,185,207,1) 53%, rgba(0,236,208,1) 100%);
     border: 0;
 }
 
-.about .rightCol {
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 55vw;
+.about .aboutContent {
+    position: relative;
+    height: 58vh;
+    width: 100vw;
 }
 
-.about .rightCol text {
-    font-family: Montserrat;
-    text-align: justify;
-    font-size: 1.2vw;
-    color: white;
-}
-
-.about .rightCol text:not(:first-child) {
-    padding-top: 5vh;
-}
-
-.about .rightCol .aboutFirstText {
-    text-indent: 1.5vw;
-    padding-top: 0px !important;
-}
-
-.about .rightCol div {
+.about .aboutContent .content {
     transition: visibility 0.3s, opacity 0.3s;
     transition-delay: 0.2s;
     opacity: 1;
-    padding-right: 8vw;
-    position: absolute;
-    padding-top: 8vh;
     visibility: visible;
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.about .rightCol .hide {
+.about .aboutContent .hide {
     visibility: hidden;
     transition-delay: 0.0s !important;
     opacity: 0;
 }
 
-.about .rightCol .aboutText2 {
-    padding-top: 22vh;
+.about .content div::-webkit-scrollbar {
+    display: none;
 }
 
-.about .rightCol .aboutText3 {
-    padding-top: 19vh;
+.about .aboutContent .content div {
+    width: 54vw;
+    padding-left: 4vw;
+    padding-right: 2vw;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
 }
 
-.about .rightCol .aboutText4 {
-    padding-top: 35.5vh;
+.about .aboutContent .content img {
+    width: 40vw;
 }
 
-.about .rightCol .textBold {
-    font-weight: bold;
+.about .aboutContent .content p:first-child {
+    margin-bottom: 5vh;
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+.about .aboutContent .content p:not(:first-child) {
+    text-indent: 1vw;
+    line-height: 4vh;
+    font-size: 1.2vw;
 }
 
 @media (max-width: 600px) {
-    .about .header .menuButton {
-        background-color: #09292F;
-    }
     
-    .about .aboutContent {
-        flex-direction: column;
-    }
-
-    .about .leftCol text {
-        display: none;
-    }
-
-    .about .leftCol {
-        height: 7vh;
-        flex-direction: row;
-        width: 100vw;
-        padding: 0px;
-        padding-top: 12vh;
-        margin: 0px;
-        background-color: #09292F;
-    }
-
-    .about .leftCol .buttonBorder {
-        height: 1px;
-    }
-
-    .about .leftCol button {
-        font-size: 3.5vw;
-        margin-left: 0.8vw;
-        margin-right: 0.8vw;
-    }
-
-    .about .rightCol {
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100vw;
-        height: 79vh;
-        padding-top: 2vh;
-    }
-
-    .about .rightCol text {
-        font-size: 3.8vw;
-        font-weight: 100;
-        line-height: 3vh;
-    }
-
-    .about .rightCol div {
-        padding: 7vh 7vw 0vh 7vw;
-        max-height: 77vh;
-        overflow: auto;
-    }
-
-    .about .rightCol div:first-child {
-        padding-top: 0px;
-    }
-
-    .about .rightCol .aboutFirstText {
-        text-indent: 4vw;
-    }
-
-    .about .rightCol text:not(:first-child) {
-        padding-top: 5vh;
-    }
-
-    .about .rightCol .aboutText2 {
-        padding-top: 7vh;
-    }
-    
-    .about .rightCol .aboutText3 {
-        padding-top: 7vh;
-    }
-    
-    .about .rightCol .aboutText4 {
-        padding-top: 7vh;
-    }
 }

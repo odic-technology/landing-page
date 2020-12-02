@@ -7,13 +7,7 @@
     margin: 0px 10vw;
 }
 
-.portifolioDesign .textHeader {
-  font-size: 2.2vw;
-  margin-bottom: 3vh;
-}
-
-.portifolioDesign .about text {
-  color: white;
+.portifolioDesign .about p {
   width: 30vw;
 }
 
@@ -34,15 +28,8 @@
 .portifolioDesign .goals {
   background-color: #023B7E;
   height: 60vh;
-  display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
   padding: 0px 31vw 0px 10vw;
-}
-
-.portifolioDesign .goals text {
-  color: white;
 }
 
 .portifolioDesign .colorPallete {
@@ -56,9 +43,8 @@
   padding: 0px 5vw;
 }
 
-.portifolioDesign .colorPallete div {
-  display: flex;
-  flex-direction: column;
+.portifolioDesign .colorPallete p {
+  color: black;
 }
 
 .portifolioDesign .colorPallete .textPallete {
@@ -84,23 +70,16 @@
   background-color: #EF3C1F;
 }
 
-.portifolioDesign .colorPallete .color text {
+.portifolioDesign .colorPallete .color p {
   margin-top: 1vw;
   font-weight: bold;
 }
 
 .portifolioDesign .improvement {
   background-color: #022F64;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-top: 8vh;
   padding-bottom: 5vh;
-}
-
-.portifolioDesign .improvement text {
-  color: white;
 }
 
 .portifolioDesign .improvement .comparison {
@@ -110,20 +89,14 @@
 
 .portifolioDesign .improvement .divHalf {
   width: 48vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .portifolioDesign .improvement .divHalfCenter {
   width: 50vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
-.portifolioDesign .improvement .divHalf text {
+.portifolioDesign .improvement .divHalf p {
   font-size: 1.5vw;
   margin-bottom: 3vh;
 }
@@ -142,27 +115,20 @@
 }
 
 .portifolioDesign .improvement .divHalf .divHalfImages {
-  display: flex;
   flex: 1;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .portifolioDesign .learnings {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   height: 70vh;
 }
 
-.portifolioDesign .learnings text {
-  color: white;
+.portifolioDesign .learnings p {
   width: 46vw;
 }
 
-.portifolioDesign .learnings text:first-child {
+.portifolioDesign .learnings p:first-child {
   text-align: center;
   margin-bottom: 4vh;
 }
@@ -170,16 +136,22 @@
 .portifolioDesign .feedback {
   background-color: white;
   height: 60vh;
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
   padding: 10vh 0px;
 }
 
-.portifolioDesign .feedback text {
+.portifolioDesign .feedback h1 {
   width: 55vw;
   text-align: center;
+  font-size: 1.1vw;
+  font-weight: 400;
+  color: black;
+}
+
+.portifolioDesign .feedback p {
+  width: 55vw;
+  text-align: center;
+  color: black;
 }
 
 .portifolioDesign .feedback .author {
@@ -190,8 +162,9 @@
   margin-right: -20vw;
 }
 
-.portifolioDesign .feedback text text {
+.portifolioDesign .feedback h1 p {
   font-size: 3vw;
+  display: inline;
 }
 
 @media (max-width: 600px) {

@@ -5,9 +5,9 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portifolio'
-import Design from './pages/Portifolio/Design'
-import Mobile from './pages/Portifolio/Mobile'
-import Web from './pages/Portifolio/Web'
+import TurboMaquinas from './pages/Portifolio/TurboMaquinas'
+import Matchfy from './pages/Portifolio/Matchfy'
+import GrandeDesafio from './pages/Portifolio/GrandeDesafio'
 
 import {
   Switch,
@@ -24,16 +24,16 @@ export default function Routes () {
         <Contact />
       </Route>
       <Route path='/turboMaquinas'>
-        <Design />
+        <TurboMaquinas />
       </Route>
       <Route path='/matchfy'>
-        <Mobile />
+        <Matchfy />
       </Route>
       <Route path='/portfolio'>
         <Portfolio />
       </Route>
       <Route path='/grandeDesafio'>
-        <Web />
+        <GrandeDesafio />
       </Route>
       <Route path='/services'>
         <Services />

@@ -6,13 +6,14 @@
 .globalStyle p {
     font-size: 1.1vw;
     color: white;
+    margin: 0px;
 }
 
 .globalStyle .textTitle {
     font-size: 2.2vw;
 }
 
-.globalStyle .textBorderBottom text:not(:last-child) {
+.globalStyle .textBorderBottom p:not(:last-child) {
     margin-bottom: 3vh;
 }
 
